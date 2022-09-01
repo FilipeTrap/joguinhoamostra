@@ -1,0 +1,1923 @@
+#tutorial {
+	position: absolute; 	
+	left: 773px; /* posiciona a 90px para a esquerda */ 
+	top: 3px; /* posiciona a 70px para baixo */
+        Background-size:100%; /* tamanho da imagem */
+        background-attachment: fixed; /* imagem fixa pra ela não rolar quando vc rolar a pagina*/
+        background-repeat: no-repeat; /* imagen não vai se repetir quando pros lados  */
+        background-position: center; /* imagem fixa no centro */
+		width: 1811px; height: 1280px;
+    } 
+
+
+#botaorolarvampiro {
+	position: absolute; 
+	left: 28px; /* posiciona a 90px para a esquerda */ 
+	top: 1135px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+	}
+
+	#especialvampiro2 {
+		position: absolute; 
+		left: 536px; /* posiciona a 90px para a esquerda */ 
+		top: 880px; /* posiciona a 70px para baixo */
+		width: 180px; height: 180px; text-align: center; font-size: 24px;
+		text-align: center; font-size: 30px;
+		background-color: Transparent;
+		background-repeat:no-repeat;
+		color: #fd0101;
+		border: 5px solid #ffffff; /* borda branca em volta */
+		}
+	
+	#especialvampiro4 {
+		position: absolute; 
+		left: 536px; /* posiciona a 90px para a esquerda */ 
+		top: 660px; /* posiciona a 70px para baixo */
+		width: 180px; height: 180px; text-align: center; font-size: 24px;
+		text-align: center; font-size: 30px;
+		background-color: Transparent;
+		background-repeat:no-repeat;
+		color: #fd0101;
+		border: 5px solid #ffffff; /* borda branca em volta */
+		}
+	
+	#especialvampiro6 {
+		position: absolute; 
+		left: 536px; /* posiciona a 90px para a esquerda */ 
+		top: 430px; /* posiciona a 70px para baixo */
+		width: 180px; height: 180px; text-align: center; font-size: 24px;
+		text-align: center; font-size: 30px;
+		background-color: Transparent;
+		background-repeat:no-repeat;
+		color: #fd0101;
+		border: 5px solid #ffffff; /* borda branca em volta */
+		}
+
+
+
+#cadeado {
+	position: absolute; 
+	left: 250px; /* posiciona a 90px para a esquerda */ 
+	top: 814px; /* posiciona a 70px para baixo */
+	width: 120px; height: 120px;
+	}
+#killall {
+	position: absolute; 
+	left: 629px; /* posiciona a 90px para a esquerda */ 
+	top: 1287px; /* posiciona a 70px para baixo */
+    width: 67px; height: 59px; text-align: center; font-size: 24px;
+	}
+	#addall {
+		position: absolute; 
+		left: 701px; /* posiciona a 90px para a esquerda */ 
+		top: 1287px; /* posiciona a 70px para baixo */
+		width: 63px; height: 58px; text-align: center; font-size: 24px;
+		}
+#backgroundInventory {
+	position: absolute; 	
+		left: 3px; /* posiciona a 90px para a esquerda */ 
+		top: 3px; /* posiciona a 70px para baixo */
+        Background-size:100%; /* tamanho da imagem */
+        background-attachment: fixed; /* imagem fixa pra ela não rolar quando vc rolar a pagina*/
+        background-repeat: no-repeat; /* imagen não vai se repetir quando pros lados  */
+        background-position: center; /* imagem fixa no centro */
+        width: 768px; height: 1280px; 
+    } 
+
+#divRight1 {
+		left: 90px; /* posiciona a 90px para a esquerda */ 
+		top: 157px; /* posiciona a 70px para baixo */
+position: absolute;
+  height: 166px;
+  width: 146px;
+  border: 1px solid #000;
+}
+
+#divRight2 {
+		left: 311px; /* posiciona a 90px para a esquerda */ 
+		top: 157px; /* posiciona a 70px para baixo */
+position: absolute;
+  height: 166px;
+  width: 146px;
+  border: 1px solid #000;
+}
+#divRight3 {
+		left: 524px; /* posiciona a 90px para a esquerda */ 
+		top: 157px; /* posiciona a 70px para baixo */
+position: absolute;
+  height: 166px;
+  width: 146px;
+  border: 1px solid #000;
+}
+
+#divGuerreiro {
+		left: 54px; /* posiciona a 90px para a esquerda */ 
+		top: -864px; /* posiciona a 70px para baixo */
+position: relative;
+  height: 166px;
+  width: 146px;
+  border: 1px solid #000;
+}
+
+#divLadino {
+		left: 300px; /* posiciona a 90px para a esquerda */ 
+		top: -1035px; /* posiciona a 70px para baixo */
+position: relative;
+  height: 166px;
+  width: 146px;
+  border: 1px solid #000;
+}
+#divMago {
+		left: 542px; /* posiciona a 90px para a esquerda */ 
+		top: -1206px; /* posiciona a 70px para baixo */
+position: relative;
+  height: 166px;
+  width: 146px;
+  border: 1px solid #000;
+}
+
+#divMonge {
+		left: 54px; /* posiciona a 90px para a esquerda */ 
+		top: -1155px; /* posiciona a 70px para baixo */
+position: relative;
+  height: 166px;
+  width: 146px;
+  border: 1px solid #000;
+}
+
+#divClerigo {
+		left: 299px; /* posiciona a 90px para a esquerda */ 
+		top: -1329px; /* posiciona a 70px para baixo */
+position: relative;
+  height: 166px;
+  width: 146px;
+  border: 1px solid #000;
+}
+
+#divBarbaro {
+		left: 542px; /* posiciona a 90px para a esquerda */ 
+		top: -1496px; /* posiciona a 70px para baixo */
+position: relative;
+  height: 166px;
+  width: 146px;
+  border: 1px solid #000;
+}
+#divVampiro {
+		left: 57px; /* posiciona a 90px para a esquerda */ 
+		top: -1452px; /* posiciona a 70px para baixo */
+position: relative;
+  height: 166px;
+  width: 146px;
+  border: 1px solid #000;
+}
+
+.container {
+    display: none;
+}
+
+
+#botaocomeçarfase1 {
+	position: absolute; 
+	left: 550px; /* posiciona a 90px para a esquerda */ 
+	top: 1130px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+    
+}
+
+#botaocomeçarfase2 {
+	position: absolute; 
+	left: 550px; /* posiciona a 90px para a esquerda */ 
+	top: 1130px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+    
+}
+
+#botaocomeçarfase3 {
+	position: absolute; 
+	left: 550px; /* posiciona a 90px para a esquerda */ 
+	top: 1130px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+    
+}
+
+#botaocomeçarfase4 {
+	position: absolute; 
+	left: 550px; /* posiciona a 90px para a esquerda */ 
+	top: 1130px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+    
+}
+
+#botaocomeçarfase5 {
+	position: absolute; 
+	left: 550px; /* posiciona a 90px para a esquerda */ 
+	top: 1130px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+    
+}
+
+
+#botaocomeçarfase1a {
+	position: absolute; 
+	left: 550px; /* posiciona a 90px para a esquerda */ 
+	top: 1130px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+    
+}
+
+#botaocomeçarfase2a {
+	position: absolute; 
+	left: 550px; /* posiciona a 90px para a esquerda */ 
+	top: 1130px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+    
+}
+
+#botaocomeçarfase3a {
+	position: absolute; 
+	left: 550px; /* posiciona a 90px para a esquerda */ 
+	top: 1130px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+    
+}
+
+#botaocomeçarfase4a {
+	position: absolute; 
+	left: 550px; /* posiciona a 90px para a esquerda */ 
+	top: 1130px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+    
+}
+
+#botaocomeçarfase5a {
+	position: absolute; 
+	left: 550px; /* posiciona a 90px para a esquerda */ 
+	top: 1130px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+    
+}
+
+#WCharStandFront {
+	position: absolute; 
+	left: 48px; /* 48px posiciona a 90px para a esquerda */ 
+	top: 780px; /* 780px posiciona a 70px para baixo */
+	width: 100px; height: 138px;
+	
+	}
+
+
+.aninsetastart {
+	-webkit-animation-name: aninsetastarta;
+	-webkit-animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes aninsetastarta {
+	0% {left:48px; top:780px;}
+  100% {left:191px; top:780px;}
+  }
+  .aninsetafase1frente {
+	-webkit-animation-name: aninsetafase1frentea;
+	-webkit-animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes aninsetafase1frentea {
+	0% {left:191px; top:780px;}
+   50% {left:390px; top:780px;}
+  100% {left:399px; top:658px;}
+  }
+
+  .aninsetafase1cima {
+	-webkit-animation-name: aninsetafase1cimaa;
+	-webkit-animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes aninsetafase1cimaa {
+	0% {left:191px; top:780px;}
+   25% {left:194px; top:661px;}
+   50% {left:124px; top:661px;}
+  100% {left:124px; top:457px;}
+  }
+  
+  
+
+  .aninsetafase2cima {
+	-webkit-animation-name: aninsetafase2cimaa;
+	-webkit-animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes aninsetafase2cimaa {
+	
+
+  	0% {left:124px; top:457px;}
+  100% {left:123px; top:164px;}
+  }
+
+
+  .aninsetafase2baixo {
+	-webkit-animation-name: aninsetafase2baixoa;
+	-webkit-animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes aninsetafase2baixoa {
+  0% {left:124px; top:457px;}
+  25% {left:124px; top:661px;}
+  50% {left:194px; top:661px;}
+  100% {left:191px; top:780px;}
+  }
+
+
+  .aninsetafase3baixo {
+	-webkit-animation-name: aninsetafase3baixoa;
+	-webkit-animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes aninsetafase3baixoa {
+	
+	0% {left:123px; top:164px;}
+  100% {left:124px; top:457px;}
+  
+  }
+
+  .aninsetafase4cima {
+	-webkit-animation-name: aninsetafase4cimaa;
+	-webkit-animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes aninsetafase4cimaa {
+	0% {left:399px; top:658px;}
+  100% {left:399px; top:258px;}
+  }
+
+
+  
+
+  .aninsetafase4baixo {
+	-webkit-animation-name: aninsetafase4baixoa;
+	-webkit-animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes aninsetafase4baixoa {
+     0% {left:399px; top:658px;}
+    50% {left:390px; top:780px;}
+   100% {left:191px; top:780px;}
+  }
+
+  .aninsetafase5baixo {
+	-webkit-animation-name: aninsetafase5baixoa;
+	-webkit-animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes aninsetafase5baixoa {
+	
+    0% {left:399px; top:258px;}
+  100% {left:399px; top:658px;}
+  }
+
+#setastart {
+	position: absolute; 
+	left: 118px; /* posiciona a 90px para a esquerda */ 
+	top: 828px; /* posiciona a 70px para baixo */
+	width: 120px; height: 120px;
+	background-color: Transparent; 
+	border-color: Transparent; 
+	}
+	
+
+	#setafase1cima {
+		position: absolute; 
+		left: 178px; /* posiciona a 90px para a esquerda */ 
+		top: 810px; /* posiciona a 70px para baixo */
+		width: 120px; height: 120px;
+		transform: rotate(-90deg);
+		transform-origin: left top 0;
+		background-color: Transparent; 
+		border-color: Transparent; 
+		}
+
+		#setafase1traz {
+			position: absolute; 
+			left: 118px; /* posiciona a 90px para a esquerda */ 
+			top: 828px; /* posiciona a 70px para baixo */
+			width: 120px; height: 120px;
+			-webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+			transform: scaleX(-1);/* inversão do personagem da direita*/
+			background-color: Transparent; 
+			border-color: Transparent; 
+			}
+			#setafase1frente {
+				position: absolute; 
+				left: 238px; /* posiciona a 90px para a esquerda */ 
+				top: 828px; /* posiciona a 70px para baixo */
+				width: 120px; height: 120px;
+				background-color: Transparent; 
+				border-color: Transparent; 
+				}
+
+#setafase2cima {
+position: absolute; 
+left: 111px; /* posiciona a 90px para a esquerda */ 
+top: 480px; /* posiciona a 70px para baixo */
+width: 120px; height: 120px;
+transform: rotate(-90deg);
+transform-origin: left top 0;
+background-color: Transparent; 
+border-color: Transparent; 
+					}
+
+
+#setafase2baixo {
+position: absolute; 
+left: 228px; /* posiciona a 90px para a esquerda */ 
+top: 574px; /* posiciona a 70px para baixo */
+width: 120px; height: 120px;
+transform: rotate(90deg);
+transform-origin: left top 0;
+background-color: Transparent; 
+border-color: Transparent; 
+}
+
+
+#setafase3baixo {
+	position: absolute; 
+	left: 228px; /* posiciona a 90px para a esquerda */ 
+	top: 280px; /* posiciona a 70px para baixo */
+	width: 120px; height: 120px;
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+	background-color: Transparent; 
+	border-color: Transparent; 
+	}
+
+	
+
+	#setafase4baixo {
+		position: absolute; 
+		left: 504px; /* posiciona a 90px para a esquerda */ 
+		top: 773px; /* posiciona a 70px para baixo */
+		width: 120px; height: 120px;
+		transform: rotate(90deg);
+		transform-origin: left top 0;
+		background-color: Transparent; 
+		border-color: Transparent; 
+		}
+
+		#setafase4cima {
+			position: absolute; 
+			left: 387px; /* posiciona a 90px para a esquerda */ 
+			top: 681px; /* posiciona a 70px para baixo */
+			width: 120px; height: 120px;
+			transform: rotate(-90deg);
+			transform-origin: left top 0;
+			background-color: Transparent; 
+			border-color: Transparent; 
+								}
+
+#setafase5baixo {
+	position: absolute; 
+	left: 504px; /* posiciona a 90px para a esquerda */ 
+	top: 366px; /* posiciona a 70px para baixo */
+	width: 120px; height: 120px;
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+	background-color: Transparent; 
+	border-color: Transparent; 
+	}								
+
+#miniplayer1 {
+	position: absolute; 
+	left: 25px; /* posiciona a 90px para a esquerda */ 
+	top: 1075px; /* posiciona a 70px para baixo */
+    -webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+    transform: scaleX(-1);/* inversão do personagem da direita*/
+	width: 120px; height: 120px;
+	}
+	#miniplayer3 {
+		position: absolute; 
+		left: 140px; /* posiciona a 90px para a esquerda */ 
+		top: 1075px; /* posiciona a 70px para baixo */
+		-webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+		transform: scaleX(-1);/* inversão do personagem da direita*/
+		width: 120px; height: 120px;
+		}
+		#miniplayer5 {
+			position: absolute; 
+			left: 250px; /* posiciona a 90px para a esquerda */ 
+			top: 1075px; /* posiciona a 70px para baixo */
+			-webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+			transform: scaleX(-1);/* inversão do personagem da direita*/
+			width: 120px; height: 120px;
+			}
+
+
+
+
+
+#botaostart {
+	position: absolute; 
+	left: 150px; /* posiciona a 90px para a esquerda */ 
+	top: 645px; /* posiciona a 70px para baixo */
+	background-color: Transparent;
+	width: 140px; height: 130px; 
+	border-color: Transparent; 
+	}
+
+#worldmap {
+	position: absolute; 	
+		left: 3px; /* posiciona a 90px para a esquerda */ 
+		top: 3px; /* posiciona a 70px para baixo */
+        Background-size:100%; /* tamanho da imagem */
+        background-attachment: fixed; /* imagem fixa pra ela não rolar quando vc rolar a pagina*/
+        background-repeat: no-repeat; /* imagen não vai se repetir quando pros lados  */
+        background-position: center; /* imagem fixa no centro */
+        width: 768px; height: 1280px; 
+    } 
+
+#teladetitulo {
+	position: absolute; 	
+		left: 3px; /* posiciona a 90px para a esquerda */ 
+		top: 3px; /* posiciona a 70px para baixo */
+        Background-size:100%; /* tamanho da imagem */
+        background-attachment: fixed; /* imagem fixa pra ela não rolar quando vc rolar a pagina*/
+        background-repeat: no-repeat; /* imagen não vai se repetir quando pros lados  */
+        background-position: center; /* imagem fixa no centro */
+        width: 768px; height: 1280px; 
+    } 
+
+	#gifteladetitulo {
+		position: absolute; 	
+			left: 3px; /* posiciona a 90px para a esquerda */ 
+			top: 3px; /* posiciona a 70px para baixo */
+			Background-size:100%; /* tamanho da imagem */
+			background-attachment: fixed; /* imagem fixa pra ela não rolar quando vc rolar a pagina*/
+			background-repeat: no-repeat; /* imagen não vai se repetir quando pros lados  */
+			background-position: center; /* imagem fixa no centro */
+			width: 768px; height: 1280px; 
+		} 
+
+
+#especialbarbaro2 {
+	position: absolute; 
+	left: 60px;     
+	top: 880px;  
+	width: 180px; height: 180px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	color: #eb0404;
+	border: 5px solid #ffffff;   
+	}
+
+#especialbarbaro4 {
+	position: absolute; 
+	left: 60px;   
+	top: 660px;   
+	width: 180px; height: 180px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	color: #eb0404;
+	border: 5px solid #ffffff;    
+	}
+
+#especialbarbaro6 {
+	position: absolute; 
+	left: 60px;   
+	top: 430px;   
+	width: 180px; height: 180px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	color: #eb0404;
+	border: 5px solid #ffffff; 
+	}
+	
+	/*
+	#espbarbaro1gif {
+		position: absolute; 
+		left: 0px;   posiciona a 90px para a esquerda 
+		top: 800px;   posiciona a 50px para baixo 
+	
+		width: 340px; height:340px;
+		}
+	#espbarbaro2gif {
+		position: absolute; 
+		left: 460px;   posiciona a 90px para a esquerda  
+		top: 780px;   posiciona a 50px para baixo 
+	    -webkit-transform: scaleX(-1);  inversão do personagem da direita 
+    transform: scaleX(-1);  inversão do personagem da direita 
+		width: 370px; height:370px;
+		}
+	#espbarbaro3gif {
+		position: absolute; 
+		left: 0px;   posiciona a 90px para a esquerda  
+		top: 580px;   posiciona a 50px para baixo 
+	
+		width: 340px; height:340px;
+		}
+	#espbarbaro4gif {
+		position: absolute; 
+		left: 460px;   posiciona a 90px para a esquerda   
+		top: 560px;   posiciona a 50px para baixo  
+	    -webkit-transform: scaleX(-1);  inversão do personagem da direita 
+    transform: scaleX(-1);  inversão do personagem da direita 
+		width: 370px; height:370px;
+		}
+	#espbarbaro5gif {
+		position: absolute; 
+		left: 0px;   posiciona a 90px para a esquerda   
+		top: 335px;   posiciona a 50px para baixo  
+	
+		width: 340px; height:340px;
+		}
+	#espbarbaro6gif {
+		position: absolute; 
+		left: 460px;   posiciona a 90px para a esquerda   
+		top: 345px;   posiciona a 50px para baixo  
+	    -webkit-transform: scaleX(-1);  inversão do personagem da direita 
+    transform: scaleX(-1);  inversão do personagem da direita 
+		width: 370px; height:370px;
+		}
+
+*/
+
+
+
+
+.aninshakePL1 {
+	-webkit-animation-name: aninshakePL1a;
+	-webkit-animation-duration: 0.8s;
+	-webkit-animation-iteration-count: 1;
+  }
+  
+  @keyframes aninshakePL1a {
+  0%   {left:50px; top:850px;}
+  25%  {left:70px; top:850px;}
+  50%  {left:30px; top:850px;}
+  75%	 {left:70px; top:850px;}
+  100% {left:50px; top:850px;}
+  }
+  .aninshakePL3 {
+	-webkit-animation-name: aninshakePL3a;
+	-webkit-animation-duration: 0.8s;
+	-webkit-animation-iteration-count: 1;
+  }
+  
+  @keyframes aninshakePL3a {
+  0%  {left:50px; top:630px;}
+  25%  {left:70px; top:630px;}
+  50%  {left:20px; top:630px;}
+  75%  {left:70px; top:630px;}
+  100% {left:50px; top:630px;}
+  }
+  .aninshakePL5 {
+	-webkit-animation-name: aninshakePL5a;
+	-webkit-animation-duration: 0.8s;
+	-webkit-animation-iteration-count: 1;
+  }
+  
+  @keyframes aninshakePL5a {
+  0%   {left:50px; top:415px;}
+  25%  {left:70px; top:415px;}
+  50%  {left:30px; top:415px;}
+  75%	 {left:70px; top:415px;}
+  100% {left:50px; top:415px;}
+  }
+
+
+#contadordano {
+	position: absolute; 
+	left: 580px; /* posiciona a 90px para a esquerda */ 
+	top: 1130px; /* posiciona a 70px para baixo */
+width: 130px; height: 125px; text-align: center; font-size: 80px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, 0);
+	}
+
+
+
+#testelocal {
+	position: absolute; 
+	left: 340px; /* posiciona a 90px para a esquerda */ 
+	top: 650px; /* posiciona a 70px para baixo */
+	-webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+	transform: scaleX(-1);/* inversão do personagem da direita*/
+	width: 50px; height: 50px;
+	}
+/*  -------------------------  anição mago attack  ----------------------*/
+	.aninPL1magespc {
+		-webkit-animation-name: aninPL1magespca;
+		-webkit-animation-duration: 0.8s;
+		-webkit-animation-iteration-count: 1;
+	  }
+	  
+	  @keyframes aninPL1magespca {
+	  0%   {left:50px; top:850px;}
+		50%  {left:340px; top:650px;}
+		100% {left:50px; top:850px;}
+	  }
+
+
+	  .aninPL3magespc {
+		-webkit-animation-name: aninPL3magespca;
+		-webkit-animation-duration: 0.8s;
+		-webkit-animation-iteration-count: 1;
+	  }
+	  
+	  @keyframes aninPL3magespca {
+	  0%   {}
+	  50%  {left:340px; top:650px;}
+		100% {left:50px; top:630px;}
+	  }
+
+	  .aninPL5magespc {
+		-webkit-animation-name: aninPL5magespca;
+		-webkit-animation-duration: 0.8s;
+		-webkit-animation-iteration-count: 1;
+	  }
+	  
+	  @keyframes aninPL5magespca {
+	  0%   {}
+	  50%  {left:340px; top:650px;}
+		100% {left:50px; top:415px;}
+	  }
+/*  -------------------------  anição inimigo mago attack  ----------------------*/
+
+.aninPL2magespc {
+	-webkit-animation-name: aninPL2magespca;
+	-webkit-animation-duration: 0.7s;
+	-webkit-animation-iteration-count: 1;
+  }
+  
+  @keyframes aninPL2magespca {
+  0%   {}
+  50%  {left:340px; top:650px;}
+	100% {left:530px; top:850px;}
+  }
+
+  .aninPL4magespc {
+	-webkit-animation-name: aninPL4magespca;
+	-webkit-animation-duration: 0.7s;
+	-webkit-animation-iteration-count: 1;
+  }
+  
+  @keyframes aninPL4magespca {
+  0%   {}
+  50%  {left:340px; top:650px;}
+	100% {left:530px; top:630px;}
+  }
+
+.aninPL6magespc {
+	-webkit-animation-name: aninPL6magespca;
+	-webkit-animation-duration: 0.7s;
+	-webkit-animation-iteration-count: 1;
+  }
+  
+  @keyframes aninPL6magespca {
+  0%   {}
+  50%  {left:340px; top:650px;}
+	100% {left:530px; top:415px;}
+  }
+
+  /*------------------------------------------------------*/
+
+
+
+#dice1 {
+	position: absolute; 
+	left: 185px; /* posiciona a 90px para a esquerda */ 
+	top: 1100px; /* posiciona a 70px para baixo */
+    width: 60px; height: 60px;
+    
+}
+#dice2 {
+	position: absolute; 
+	left: 247px; /* posiciona a 90px para a esquerda */ 
+	top: 1100px; /* posiciona a 70px para baixo */
+    width: 60px; height: 60px;
+    
+}
+#dice3 {
+	position: absolute; 
+	left: 309px; /* posiciona a 90px para a esquerda */ 
+	top: 1100px; /* posiciona a 70px para baixo */
+    width: 60px; height: 60px;
+    
+}
+#dice4 {
+	position: absolute; 
+	left: 371px; /* posiciona a 90px para a esquerda */ 
+	top: 1100px; /* posiciona a 70px para baixo */
+    width: 60px; height: 60px;
+    
+}
+#dice5 {
+	position: absolute; 
+	left: 433px; /* posiciona a 90px para a esquerda */ 
+	top: 1100px; /* posiciona a 70px para baixo */
+    width: 60px; height: 60px;
+    
+}
+
+
+
+#dice6 {
+	position: absolute; 
+	left: 185px; /* posiciona a 90px para a esquerda */ 
+	top: 1162px; /* posiciona a 70px para baixo */
+    width: 60px; height: 60px;
+    
+}
+#dice7 {
+	position: absolute; 
+	left: 247px; /* posiciona a 90px para a esquerda */ 
+	top: 1162px; /* posiciona a 70px para baixo */
+    width: 60px; height: 60px;
+    
+}
+#dice8 {
+	position: absolute; 
+	left: 309px; /* posiciona a 90px para a esquerda */ 
+	top: 1162px; /* posiciona a 70px para baixo */
+    width: 60px; height: 60px;
+    
+}
+#dice9 {
+	position: absolute; 
+	left: 371px; /* posiciona a 90px para a esquerda */ 
+	top: 1162px; /* posiciona a 70px para baixo */
+    width: 60px; height: 60px;
+    
+}
+#dice10 {
+	position: absolute; 
+	left: 433px; /* posiciona a 90px para a esquerda */ 
+	top: 1162px; /* posiciona a 70px para baixo */
+    width: 60px; height: 60px;
+    
+}
+
+
+#BackEditarEquipe {
+	position: absolute; 
+	left: -90px; /* posiciona a 90px para a esquerda */ 
+	top: 962px; /* posiciona a 70px para baixo */
+	background-color: Transparent;
+	width: 140px; height: 130px; 
+	border-color: Transparent; 
+	width: 585px; height: 380px; text-align: center; font-size: 24px;
+	
+}
+
+#EditarEquipe {
+	position: absolute; 
+	left: -100px; /* posiciona a 90px para a esquerda */ 
+	top: 960px; /* posiciona a 70px para baixo */
+	background-color: Transparent;
+	width: 140px; height: 130px; 
+	border-color: Transparent; 
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+    
+}
+#VoltarEditarEquipe {
+	position: absolute; 
+	left: 62px; /* posiciona a 90px para a esquerda */ 
+	top: 1116px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+	background-color: Transparent;
+    
+}
+
+    #player1 {
+	position: absolute; 
+	left: 50px; /* posiciona a 90px para a esquerda */ 
+	top: 850px; /* posiciona a 70px para baixo */
+    -webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+    transform: scaleX(-1);/* inversão do personagem da direita*/
+	width: 220px; height: 220px;
+	}
+
+
+	
+.aninPL1atkPL2 {
+  -webkit-animation-name: aninPL1atkPL2a;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL1atkPL2a {
+0%   {left:50px; top:850px;}
+  50%  {left:350px; top:850px;}
+  100% {left:50px; top:850px;}
+}
+
+.aninPL1atkPL4 {
+  -webkit-animation-name: aninPL1atkPL4a;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL1atkPL4a {
+0%   {left:50px; top:850px;}
+  50%  {left:350px; top:650px;}
+  100% {left:50px; top:850px;}
+}
+
+.aninPL1atkPL6 {
+  -webkit-animation-name: aninPL1atkPL6a;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL1atkPL6a {
+0%   {left:50px; top:850px;}
+  50%  {left:350px; top:400px;}
+  100% {left:50px; top:850px;}
+}	
+	
+	
+	/* ===========PLAYER 2 ============*/
+	
+    #player2 {
+	position: absolute; 
+	left: 530px; /* posiciona a 90px para a esquerda */ 
+	top: 850px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+
+	
+	.aninPL2atkPL1 {
+  -webkit-animation-name: aninPL2atkPL1a;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL2atkPL1a {
+0%   {}
+  50%  {left:90px; top:850px;}
+  100% {left:530px; top:850px;}
+}
+
+.aninPL2atkPL3 {
+  -webkit-animation-name: aninPL2atkPL3a;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL2atkPL3a {
+0%   {}
+  50%  {left:90px; top:650px;}
+  100% {left:530px; top:850px;}
+}
+
+.aninPL2atkPL5 {
+  -webkit-animation-name: aninPL2atkPL5a;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL2atkPL5a {
+0%   {}
+  50%  {left:90px; top:430px;}
+  100% {left:530px; top:850px;}
+}
+	
+	/* ===========PLAYER 3 ============*/
+	
+	 #player3 {
+	position: absolute; 
+	left: 50px; /* posiciona a 90px para a esquerda */ 
+	top: 630px; /* posiciona a 70px para baixo */
+	    -moz-transform: scaleX(-1); /* inversão do personagem da direita*/
+    -o-transform: scaleX(-1);/* inversão do personagem da direita*/
+    -webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+    transform: scaleX(-1);/* inversão do personagem da direita*/
+	width: 220px; height: 220px;
+	}
+
+	
+		
+.aninPL3atkPL2 {
+  -webkit-animation-name: aninPL3atkPL2a;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL3atkPL2a {
+0%   {}
+  50%  {left:350px; top:850px;}
+  100% {left:50px; top:630px;}
+}
+
+.aninPL3atkPL4 {
+  -webkit-animation-name: aninPL3atkPL4a;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL3atkPL4a {
+0%   {}
+  50%  {left:350px; top:650px;}
+  100% {left:50px; top:630px;}
+}
+
+.aninPL3atkPL6 {
+  -webkit-animation-name: aninPL3atkPL6a;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL3atkPL6a {
+0%   {}
+  50%  {left:350px; top:400px;}
+  100% {left:50px; top:630px;}
+}	
+
+	/* ===========PLAYER 4 ============*/
+	 #player4 {
+	position: absolute; 
+	left: 530px; /* posiciona a 90px para a esquerda */ 
+	top: 630px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+
+		
+	.aninPL4atkPL1 {
+  -webkit-animation-name: aninPL4atkPL1a;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL4atkPL1a {
+0%   {}
+  50%  {left:90px; top:850px;}
+  100% {left:530px; top:630px;}
+}
+
+.aninPL4atkPL3 {
+  -webkit-animation-name: aninPL4atkPL3a;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL4atkPL3a {
+0%   {}
+  50%  {left:90px; top:650px;}
+  100% {left:530px; top:630px;}
+}
+
+.aninPL4atkPL5 {
+  -webkit-animation-name: aninPL4atkPL5a;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL4atkPL5a {
+0%   {}
+  50%  {left:90px; top:430px;}
+  100% {left:530px; top:630px;}
+}
+	
+	
+	/* ===========PLAYER 5 ============*/
+	 #player5 {
+	position: absolute; 
+	left: 50px; /* posiciona a 90px para a esquerda */ 
+	top: 415px; /* posiciona a 70px para baixo */
+	    -moz-transform: scaleX(-1); /* inversão do personagem da direita*/
+    -o-transform: scaleX(-1);/* inversão do personagem da direita*/
+    -webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+    transform: scaleX(-1);/* inversão do personagem da direita*/
+	width: 220px; height: 220px;
+	}
+
+			
+.aninPL5atkPL2 {
+  -webkit-animation-name: aninPL5atkPL2a;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL5atkPL2a {
+0%   {}
+  50%  {left:350px; top:850px;}
+  100% {left:50px; top:415px;}
+}
+
+.aninPL5atkPL4 {
+  -webkit-animation-name: aninPL5atkPL4a;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL5atkPL4a {
+0%   {}
+  50%  {left:350px; top:650px;}
+  100% {left:50px; top:415px;}
+}
+
+.aninPL5atkPL6 {
+  -webkit-animation-name: aninPL5atkPL6a;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL5atkPL6a {
+0%   {}
+  50%  {left:350px; top:400px;}
+  100% {left:50px; top:415px;}
+}
+	
+	/* ===========PLAYER 6 ============*/
+	 #player6 {
+	position: absolute; 
+	left: 530px; /* posiciona a 90px para a esquerda */ 
+	top: 415px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+
+			
+	.aninPL6atkPL1 {
+  -webkit-animation-name: aninPL6atkPL1a;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL6atkPL1a {
+0%   {}
+  50%  {left:90px; top:850px;}
+  100% {left:530px; top:415px;}
+}
+
+.aninPL6atkPL3 {
+  -webkit-animation-name: aninPL6atkPL3a;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL6atkPL3a {
+0%   {}
+  50%  {left:90px; top:650px;}
+  100% {left:530px; top:415px;}
+}
+
+.aninPL6atkPL5 {
+  -webkit-animation-name: aninPL6atkPL5a;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes aninPL6atkPL5a {
+0%   {}
+  50%  {left:90px; top:430px;}
+  100% {left:530px; top:415px;}
+}
+
+/*-----------------------------------*/
+
+
+#sangramento1show {
+	position: absolute; 
+	left: 100px; /* posiciona a 90px para a esquerda */ 
+	top: 850px; /* posiciona a 70px para baixo */
+	width: 70px; height: 70px; text-align: center; font-size: 50px;
+	color: #fd0101;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#sangramento2show {
+	position: absolute; 
+	left: 580px; /* posiciona a 90px para a esquerda */ 
+	top: 850px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+color: #fd0101;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#sangramento3show {
+	position: absolute; 
+	left: 100px; /* posiciona a 90px para a esquerda */ 
+	top: 630px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+color: #fd0101;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#sangramento4show {
+	position: absolute; 
+	left: 580px; /* posiciona a 90px para a esquerda */ 
+	top: 630px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+color: #fd0101;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#sangramento5show {
+	position: absolute; 
+	left: 100px; /* posiciona a 90px para a esquerda */ 
+	top: 415px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+color: #fd0101;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#sangramento6show {
+	position: absolute; 
+	left: 580px; /* posiciona a 90px para a esquerda */ 
+	top: 415px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+color: #fd0101;
+	background-color:rgba(0, 0, 0, 0);;
+	}
+
+
+/* ------------------------------------------*/
+	
+	
+#vidaplayer1show {
+	position: absolute; 
+	left: 50px; /* posiciona a 90px para a esquerda */ 
+	top: 850px; /* posiciona a 70px para baixo */
+	width: 70px; height: 70px; text-align: center; font-size: 50px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#vidaplayer2show {
+	position: absolute; 
+	left: 530px; /* posiciona a 90px para a esquerda */ 
+	top: 850px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#vidaplayer3show {
+	position: absolute; 
+	left: 50px; /* posiciona a 90px para a esquerda */ 
+	top: 630px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#vidaplayer4show {
+	position: absolute; 
+	left: 530px; /* posiciona a 90px para a esquerda */ 
+	top: 630px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#vidaplayer5show {
+	position: absolute; 
+	left: 50px; /* posiciona a 90px para a esquerda */ 
+	top: 415px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#vidaplayer6show {
+	position: absolute; 
+	left: 530px; /* posiciona a 90px para a esquerda */ 
+	top: 415px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, 0);;
+	}
+
+
+#danonoinimigo2 {
+	position: absolute; 
+	left: 536px; /* posiciona a 90px para a esquerda */ 
+	top: 880px; /* posiciona a 70px para baixo */
+    width: 180px; height: 180px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+	border: 5px solid #ffffff; /* borda branca em volta */
+	}
+
+#danonoinimigo4 {
+	position: absolute; 
+	left: 536px; /* posiciona a 90px para a esquerda */ 
+	top: 660px; /* posiciona a 70px para baixo */
+    width: 180px; height: 180px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+	border: 5px solid #ffffff; /* borda branca em volta */
+	}
+
+#danonoinimigo6 {
+	position: absolute; 
+	left: 536px; /* posiciona a 90px para a esquerda */ 
+	top: 430px; /* posiciona a 70px para baixo */
+    width: 180px; height: 180px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 5px solid #ffffff; /* borda branca em volta */
+	}
+	
+
+	/*    ==================   ESPECIAL DO MAGO ===================*/
+
+	
+	#especialmago {
+		position: absolute; 
+		left: 536px; /* posiciona a 90px para a esquerda */ 
+		top: 430px; /* posiciona a 70px para baixo */
+		width: 180px; height: 630px; text-align: center; font-size: 24px;
+		text-align: center; font-size: 30px;
+		background-color: Transparent;
+		background-repeat:no-repeat;
+		color: #4a55f0;
+		border: 5px solid #ffffff; /* borda branca em volta */
+		}
+		#especialmagohgif {
+			position: absolute; 
+			left: 536px; /* posiciona a 90px para a esquerda */ 
+			top: 430px; /* posiciona a 70px para baixo */
+			width: 180px; height: 630px; text-align: center; font-size: 24px;
+			text-align: center; font-size: 30px;
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			}
+		#especialmagoegif {
+				position: absolute; 
+				left: 50px; /* posiciona a 90px para a esquerda */ 
+				top: 430px; /* posiciona a 70px para baixo */
+				width: 180px; height: 630px; text-align: center; font-size: 24px;
+				text-align: center; font-size: 30px;
+				background-color: Transparent;
+				background-repeat:no-repeat;
+				}
+	
+
+
+
+	/*    ==================   ESPECIAL DO LADINO ===================*/
+
+	
+#especialladino2 {
+	position: absolute; 
+	left: 536px; /* posiciona a 90px para a esquerda */ 
+	top: 880px; /* posiciona a 70px para baixo */
+    width: 180px; height: 180px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+	color: #fd0101;
+	border: 5px solid #ffffff; /* borda branca em volta */
+	}
+
+#especialladino4 {
+	position: absolute; 
+	left: 536px; /* posiciona a 90px para a esquerda */ 
+	top: 660px; /* posiciona a 70px para baixo */
+    width: 180px; height: 180px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+	color: #fd0101;
+	border: 5px solid #ffffff; /* borda branca em volta */
+	}
+
+#especialladino6 {
+	position: absolute; 
+	left: 536px; /* posiciona a 90px para a esquerda */ 
+	top: 430px; /* posiciona a 70px para baixo */
+    width: 180px; height: 180px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+	color: #fd0101;
+    border: 5px solid #ffffff; /* borda branca em volta */
+	}
+
+	#botaorolarbarbaro {
+		position: absolute; 
+		left: 35px; /* posiciona a 90px para a esquerda */ 
+		top: 1145px; /* posiciona a 70px para baixo */
+		width: 140px; height: 130px; text-align: center; font-size: 24px;
+		}
+
+
+	
+	#botaorolarclerigo {
+		position: absolute; 
+		left: 35px; /* posiciona a 90px para a esquerda */ 
+		top: 1145px; /* posiciona a 70px para baixo */
+		width: 140px; height: 130px; text-align: center; font-size: 24px;
+		}
+
+	
+		#especialclerigo2 {
+			position: absolute; 
+			left: 60px; /* posiciona a 90px para a esquerda */ 
+			top: 880px; /* posiciona a 70px para baixo */
+			width: 180px; height: 180px; text-align: center; font-size: 24px;
+			text-align: center; font-size: 30px;
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			color: #0fe632;
+			border: 5px solid #ffffff; /* borda branca em volta */
+			}
+		
+		#especialclerigo4 {
+			position: absolute; 
+			left: 60px; /* posiciona a 90px para a esquerda */ 
+			top: 660px; /* posiciona a 70px para baixo */
+			width: 180px; height: 180px; text-align: center; font-size: 24px;
+			text-align: center; font-size: 30px;
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			color: #0fe632;
+			border: 5px solid #ffffff; /* borda branca em volta */
+			}
+		
+		#especialclerigo6 {
+			position: absolute; 
+			left: 60px; /* posiciona a 90px para a esquerda */ 
+			top: 430px; /* posiciona a 70px para baixo */
+			width: 180px; height: 180px; text-align: center; font-size: 24px;
+			text-align: center; font-size: 30px;
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			color: #0fe632;
+			border: 5px solid #ffffff; /* borda branca em volta */
+			}
+	
+
+	#botaorolarmonge {
+		position: absolute; 
+		left: 35px; /* posiciona a 90px para a esquerda */ 
+		top: 1145px; /* posiciona a 70px para baixo */
+		width: 140px; height: 130px; text-align: center; font-size: 24px;
+		}
+
+	
+		#especialmonge2 {
+			position: absolute; 
+			left: 536px; /* posiciona a 90px para a esquerda */ 
+			top: 880px; /* posiciona a 70px para baixo */
+			width: 180px; height: 180px; text-align: center; font-size: 24px;
+			text-align: center; font-size: 30px;
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			color: #fd0101;
+			border: 5px solid #ffffff; /* borda branca em volta */
+			}
+		
+		#especialmonge4 {
+			position: absolute; 
+			left: 536px; /* posiciona a 90px para a esquerda */ 
+			top: 660px; /* posiciona a 70px para baixo */
+			width: 180px; height: 180px; text-align: center; font-size: 24px;
+			text-align: center; font-size: 30px;
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			color: #fd0101;
+			border: 5px solid #ffffff; /* borda branca em volta */
+			}
+		
+		#especialmonge6 {
+			position: absolute; 
+			left: 536px; /* posiciona a 90px para a esquerda */ 
+			top: 430px; /* posiciona a 70px para baixo */
+			width: 180px; height: 180px; text-align: center; font-size: 24px;
+			text-align: center; font-size: 30px;
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			color: #fd0101;
+			border: 5px solid #ffffff; /* borda branca em volta */
+			}
+
+	
+
+
+#botaoespecialguerreirot1 {
+	position: absolute; 
+	left: 516px; /* posiciona a 90px para a esquerda */ 
+	top: 1134px; /* posiciona a 70px para baixo */
+    width: 210px; height: 140px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	}
+	#botaoespecialguerreirot3 {
+	position: absolute; 
+	left: 516px; /* posiciona a 90px para a esquerda */ 
+	top: 1134px; /* posiciona a 70px para baixo */
+    width: 210px; height: 140px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	}
+	#botaoespecialguerreirot5 {
+	position: absolute; 
+	left: 516px; /* posiciona a 90px para a esquerda */ 
+	top: 1134px; /* posiciona a 70px para baixo */
+    width: 210px; height: 140px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	}
+
+#botaoespecialladinot1 {
+	position: absolute; 
+	left: 516px; /* posiciona a 90px para a esquerda */ 
+	top: 1134px; /* posiciona a 70px para baixo */
+    width: 210px; height: 140px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	}
+	#botaoespecialladinot3 {
+	position: absolute; 
+	left: 516px; /* posiciona a 90px para a esquerda */ 
+	top: 1134px; /* posiciona a 70px para baixo */
+    width: 210px; height: 140px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	}
+	#botaoespecialladinot5 {
+	position: absolute; 
+	left: 516px; /* posiciona a 90px para a esquerda */ 
+	top: 1134px; /* posiciona a 70px para baixo */
+    width: 210px; height: 140px; text-align: center; font-size: 24px;
+	text-align: center; font-size: 30px;
+	}
+
+
+
+
+
+
+#botaorolarguerreiro {
+	position: absolute; 
+	left: 35px; /* posiciona a 90px para a esquerda */ 
+	top: 1145px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+	}
+
+
+#botaorolarmago {
+	position: absolute; 
+	left: 35px; /* posiciona a 90px para a esquerda */ 
+	top: 1145px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+	}
+
+
+#botaorolarladino {
+	position: absolute; 
+	left: 28px; /* posiciona a 90px para a esquerda */ 
+	top: 1135px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+	}
+
+
+
+#auraplayer1 {
+	position: absolute; 
+	left: 50px; /* posiciona a 90px para a esquerda */ 
+	top: 850px; /* posiciona a 70px para baixo */
+	    -moz-transform: scaleX(-1); /* inversão do personagem da direita*/
+    -o-transform: scaleX(-1);/* inversão do personagem da direita*/
+    -webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+    transform: scaleX(-1);/* inversão do personagem da direita*/
+	width: 220px; height: 220px;
+	}
+#auraplayer2 {
+	position: absolute; 
+	left: 530px; /* posiciona a 90px para a esquerda */ 
+	top: 850px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+#auraplayer3 {
+	position: absolute; 
+	left: 50px; /* posiciona a 90px para a esquerda */ 
+	top: 630px; /* posiciona a 70px para baixo */
+	    -moz-transform: scaleX(-1); /* inversão do personagem da direita*/
+    -o-transform: scaleX(-1);/* inversão do personagem da direita*/
+    -webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+    transform: scaleX(-1);/* inversão do personagem da direita*/
+	width: 220px; height: 220px;
+	}
+#auraplayer4 {
+	position: absolute; 
+	left: 530px; /* posiciona a 90px para a esquerda */ 
+	top: 630px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+#auraplayer5 {
+	position: absolute; 
+	left: 50px; /* posiciona a 90px para a esquerda */ 
+	top: 415px; /* posiciona a 70px para baixo */
+	    -moz-transform: scaleX(-1); /* inversão do personagem da direita*/
+    -o-transform: scaleX(-1);/* inversão do personagem da direita*/
+    -webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+    transform: scaleX(-1);/* inversão do personagem da direita*/
+	width: 220px; height: 220px;
+	}
+#auraplayer6 {
+	position: absolute; 
+	left: 530px; /* posiciona a 90px para a esquerda */ 
+	top: 415px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+
+
+	#botaocomeçar {
+	position: absolute; 
+	left: 550px; /* posiciona a 90px para a esquerda */ 
+	top: 1130px; /* posiciona a 70px para baixo */
+    width: 140px; height: 130px; text-align: center; font-size: 24px;
+    
+}
+
+#Selectchar5 {
+	position: absolute; 
+	left: 120px; /* posiciona a 90px para a esquerda */ 
+	top: 510px; /* posiciona a 70px para baixo */
+    width: 70px; height: 50px; text-align: center; font-size: 20px;
+    
+}
+
+#selectplayer5 {
+	position: absolute; 
+	left: 250px; /* posiciona a 90px para a esquerda */ 
+	top: 510px; /* posiciona a 70px para baixo */
+    width: 70px; height: 50px; text-align: center; font-size: 20px;
+    
+}
+
+#Selectchar3 {
+	position: absolute; 
+	left: 120px; /* posiciona a 90px para a esquerda */ 
+	top: 730px; /* posiciona a 70px para baixo */
+    width: 70px; height: 50px; text-align: center; font-size: 20px;
+    
+}
+
+#selectplayer3 {
+	position: absolute; 
+	left: 250px; /* posiciona a 90px para a esquerda */ 
+	top: 730px; /* posiciona a 70px para baixo */
+    width: 70px; height: 50px; text-align: center; font-size: 20px;
+    
+}
+
+#Selectchar1 {
+	position: absolute; 
+	left: 120px; /* posiciona a 90px para a esquerda */ 
+	top: 950px; /* posiciona a 70px para baixo */
+    width: 70px; height: 50px; text-align: center; font-size: 20px;
+    
+}
+
+#selectplayer1 {
+	position: absolute; 
+	left: 250px; /* posiciona a 90px para a esquerda */ 
+	top: 950px; /* posiciona a 70px para baixo */
+    width: 70px; height: 50px; text-align: center; font-size: 20px;
+    
+}
+
+
+	
+
+	
+
+    #demo {
+	position: absolute; 
+	left: 50px; /* posiciona a 90px para a esquerda */ 
+	top: 40px; /* posiciona a 70px para baixo */
+    width: 680px; height: 210px; text-align: center; font-size: 18px;
+    }
+
+	#tumbaplayer1 {
+	position: absolute; 
+	left: 50px; /* posiciona a 90px para a esquerda */ 
+	top: 850px; /* posiciona a 70px para baixo */
+	    -moz-transform: scaleX(-1); /* inversão do personagem da direita*/
+    -o-transform: scaleX(-1);/* inversão do personagem da direita*/
+    -webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+    transform: scaleX(-1);/* inversão do personagem da direita*/
+	width: 220px; height: 220px;
+	}
+    #tumbaplayer2 {
+	position: absolute; 
+	left: 530px; /* posiciona a 90px para a esquerda */ 
+	top: 850px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+	
+	 #tumbaplayer3 {
+	position: absolute; 
+	left: 50px; /* posiciona a 90px para a esquerda */ 
+	top: 630px; /* posiciona a 70px para baixo */
+	    -moz-transform: scaleX(-1); /* inversão do personagem da direita*/
+    -o-transform: scaleX(-1);/* inversão do personagem da direita*/
+    -webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+    transform: scaleX(-1);/* inversão do personagem da direita*/
+	width: 220px; height: 220px;
+	}
+	 #tumbaplayer4 {
+	position: absolute; 
+	left: 530px; /* posiciona a 90px para a esquerda */ 
+	top: 630px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+	 #tumbaplayer5 {
+	position: absolute; 
+	left: 50px; /* posiciona a 90px para a esquerda */ 
+	top: 415px; /* posiciona a 70px para baixo */
+	    -moz-transform: scaleX(-1); /* inversão do personagem da direita*/
+    -o-transform: scaleX(-1);/* inversão do personagem da direita*/
+    -webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+    transform: scaleX(-1);/* inversão do personagem da direita*/
+	width: 220px; height: 220px;
+	}
+	 #tumbaplayer6 {
+	position: absolute; 
+	left: 530px; /* posiciona a 90px para a esquerda */ 
+	top: 415px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+	
+	
+#missplayer1 {
+	position: absolute; 
+	left: 100px; /* posiciona a 90px para a esquerda */ 
+	top: 850px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+#missplayer2 {
+	position: absolute; 
+	left: 580px; /* posiciona a 90px para a esquerda */ 
+	top: 850px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+#missplayer3 {
+	position: absolute; 
+	left: 100px; /* posiciona a 90px para a esquerda */ 
+	top: 630px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+#missplayer4 {
+	position: absolute; 
+	left: 580px; /* posiciona a 90px para a esquerda */ 
+	top: 630px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+#missplayer5 {
+	position: absolute; 
+	left: 100px; /* posiciona a 90px para a esquerda */ 
+	top: 415px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+#missplayer6 {
+	position: absolute; 
+	left: 580px; /* posiciona a 90px para a esquerda */ 
+	top: 415px; /* posiciona a 70px para baixo */
+
+	width: 220px; height: 220px;
+	}
+
+
+	
+	#healplayer1 {
+		position: absolute; 
+		left: 50px; /* posiciona a 90px para a esquerda */ 
+		top: 800px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#healplayer2 {
+		position: absolute; 
+		left: 530px; /* posiciona a 90px para a esquerda */ 
+		top: 800px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#healplayer3 {
+		position: absolute; 
+		left: 50px; /* posiciona a 90px para a esquerda */ 
+		top: 580px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#healplayer4 {
+		position: absolute; 
+		left: 530px; /* posiciona a 90px para a esquerda */ 
+		top: 580px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#healplayer5 {
+		position: absolute; 
+		left: 50px; /* posiciona a 90px para a esquerda */ 
+		top: 365px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#healplayer6 {
+		position: absolute; 
+		left: 530px; /* posiciona a 90px para a esquerda */ 
+		top: 365px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+
+	#stunplayer1 {
+		position: absolute; 
+		left: 50px; /* posiciona a 90px para a esquerda */ 
+		top: 800px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#stunplayer2 {
+		position: absolute; 
+		left: 530px; /* posiciona a 90px para a esquerda */ 
+		top: 800px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#stunplayer3 {
+		position: absolute; 
+		left: 50px; /* posiciona a 90px para a esquerda */ 
+		top: 580px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#stunplayer4 {
+		position: absolute; 
+		left: 530px; /* posiciona a 90px para a esquerda */ 
+		top: 580px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#stunplayer5 {
+		position: absolute; 
+		left: 50px; /* posiciona a 90px para a esquerda */ 
+		top: 365px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#stunplayer6 {
+		position: absolute; 
+		left: 530px; /* posiciona a 90px para a esquerda */ 
+		top: 365px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+
+#base {
+	position: absolute; 	
+	left: 3px; /* posiciona a 90px para a esquerda */ 
+	top: 3px; /* posiciona a 70px para baixo */
+        Background-size:100%; /* tamanho da imagem */
+        background-attachment: fixed; /* imagem fixa pra ela não rolar quando vc rolar a pagina*/
+        background-repeat: no-repeat; /* imagen não vai se repetir quando pros lados  */
+        background-position: center; /* imagem fixa no centro */
+        width: 768px; height: 1280px; 
+    } 
+		 
+    #background1 {
+	position: absolute; 	
+		left: 3px; /* posiciona a 90px para a esquerda */ 
+		top: 3px; /* posiciona a 70px para baixo */
+        Background-size:100%; /* tamanho da imagem */
+        background-attachment: fixed; /* imagem fixa pra ela não rolar quando vc rolar a pagina*/
+        background-repeat: no-repeat; /* imagen não vai se repetir quando pros lados  */
+        background-position: center; /* imagem fixa no centro */
+        width: 768px; height: 1280px; 
+    } 
+    #youwingif {
+		position: absolute; 	
+			left: 3px; /* posiciona a 90px para a esquerda */ 
+			top: 3px; /* posiciona a 70px para baixo */
+			Background-size:100%; /* tamanho da imagem */
+			background-attachment: fixed; /* imagem fixa pra ela não rolar quando vc rolar a pagina*/
+			background-repeat: no-repeat; /* imagen não vai se repetir quando pros lados  */
+			background-position: center; /* imagem fixa no centro */
+			width: 768px; height: 1280px; 
+		} 
+		#youlosegif {
+			position: absolute; 	
+				left: 3px; /* posiciona a 90px para a esquerda */ 
+				top: 3px; /* posiciona a 70px para baixo */
+				Background-size:100%; /* tamanho da imagem */
+				background-attachment: fixed; /* imagem fixa pra ela não rolar quando vc rolar a pagina*/
+				background-repeat: no-repeat; /* imagen não vai se repetir quando pros lados  */
+				background-position: center; /* imagem fixa no centro */
+				width: 768px; height: 1280px; 
+			} 
