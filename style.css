@@ -65,12 +65,14 @@
 	position: absolute; 
 	left: 629px; /* posiciona a 90px para a esquerda */ 
 	top: 1287px; /* posiciona a 70px para baixo */
+	background-color: Transparent;
     width: 67px; height: 59px; text-align: center; font-size: 24px;
 	}
 	#addall {
 		position: absolute; 
 		left: 701px; /* posiciona a 90px para a esquerda */ 
 		top: 1287px; /* posiciona a 70px para baixo */
+		background-color: Transparent;
 		width: 63px; height: 58px; text-align: center; font-size: 24px;
 		}
 #backgroundInventory {
