@@ -1,3 +1,141 @@
+
+		#especialguerreiro2 {
+			position: absolute; 
+			left: 60px; /* posiciona a 90px para a esquerda */ 
+			top: 880px; /* posiciona a 70px para baixo */
+			width: 180px; height: 180px; text-align: center; font-size: 24px;
+			text-align: center; font-size: 30px;
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			color: #240fe6;
+			border: 5px solid #ffffff; /* borda branca em volta */
+			}
+		
+		#especialguerreiro4 {
+			position: absolute; 
+			left: 60px; /* posiciona a 90px para a esquerda */ 
+			top: 660px; /* posiciona a 70px para baixo */
+			width: 180px; height: 180px; text-align: center; font-size: 24px;
+			text-align: center; font-size: 30px;
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			color: #240fe6;
+			border: 5px solid #ffffff; /* borda branca em volta */
+			}
+		
+		#especialguerreiro6 {
+			position: absolute; 
+			left: 60px; /* posiciona a 90px para a esquerda */ 
+			top: 430px; /* posiciona a 70px para baixo */
+			width: 180px; height: 180px; text-align: center; font-size: 24px;
+			text-align: center; font-size: 30px;
+			background-color: Transparent;
+			background-repeat:no-repeat;
+			color: #240fe6;
+			border: 5px solid #ffffff; /* borda branca em volta */
+			}
+	
+
+
+#escudoplayer1show {
+	position: absolute; 
+	left: 74px; /* posiciona a 90px para a esquerda */ 
+	top: 983px; /* posiciona a 70px para baixo */
+	width: 70px; height: 70px; text-align: center; font-size: 50px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#escudoplayer2show {
+	position: absolute; 
+	left: 654px; /* posiciona a 90px para a esquerda */ 
+	top: 979px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#escudoplayer3show {
+	position: absolute; 
+	left: 74px; /* posiciona a 90px para a esquerda */ 
+	top: 757px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#escudoplayer4show {
+	position: absolute; 
+	left: 655px; /* posiciona a 90px para a esquerda */ 
+	top: 759px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#escudoplayer5show {
+	position: absolute; 
+	left: 75px; /* posiciona a 90px para a esquerda */ 
+	top: 545px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, 0);
+	}
+#escudoplayer6show {
+	position: absolute; 
+	left: 656px; /* posiciona a 90px para a esquerda */ 
+	top: 544px; /* posiciona a 70px para baixo */
+width: 70px; height: 70px; text-align: center; font-size: 50px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, 0);;
+	}
+
+	    #escudoplayer1 {
+			position: absolute; 
+			left: 50px; /* posiciona a 90px para a esquerda */ 
+			top: 850px; /* posiciona a 70px para baixo */
+			-webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+			transform: scaleX(-1);/* inversão do personagem da direita*/
+			width: 220px; height: 220px;
+			}
+			#escudoplayer2 {
+			position: absolute; 
+			left: 530px; /* posiciona a 90px para a esquerda */ 
+			top: 850px; /* posiciona a 70px para baixo */
+		
+			width: 220px; height: 220px;
+			}
+			#escudoplayer3 {
+			position: absolute; 
+			left: 50px; /* posiciona a 90px para a esquerda */ 
+			top: 630px; /* posiciona a 70px para baixo */
+				-moz-transform: scaleX(-1); /* inversão do personagem da direita*/
+			-o-transform: scaleX(-1);/* inversão do personagem da direita*/
+			-webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+			transform: scaleX(-1);/* inversão do personagem da direita*/
+			width: 220px; height: 220px;
+			}
+			#escudoplayer4 {
+			position: absolute; 
+			left: 530px; /* posiciona a 90px para a esquerda */ 
+			top: 630px; /* posiciona a 70px para baixo */
+		
+			width: 220px; height: 220px;
+			}
+			#escudoplayer5 {
+			position: absolute; 
+			left: 50px; /* posiciona a 90px para a esquerda */ 
+			top: 415px; /* posiciona a 70px para baixo */
+				-moz-transform: scaleX(-1); /* inversão do personagem da direita*/
+			-o-transform: scaleX(-1);/* inversão do personagem da direita*/
+			-webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+			transform: scaleX(-1);/* inversão do personagem da direita*/
+			width: 220px; height: 220px;
+			}
+			#escudoplayer6 {
+			position: absolute; 
+			left: 530px; /* posiciona a 90px para a esquerda */ 
+			top: 415px; /* posiciona a 70px para baixo */
+		
+			width: 220px; height: 220px;
+			}
+
 #tutorial {
 	position: absolute; 	
 	left: 773px; /* posiciona a 90px para a esquerda */ 
@@ -19,7 +157,7 @@
 
 	#especialvampiro2 {
 		position: absolute; 
-		left: 536px; /* posiciona a 90px para a esquerda */ 
+		left: 64px; /* posiciona a 90px para a esquerda */ 
 		top: 880px; /* posiciona a 70px para baixo */
 		width: 180px; height: 180px; text-align: center; font-size: 24px;
 		text-align: center; font-size: 30px;
@@ -31,7 +169,7 @@
 	
 	#especialvampiro4 {
 		position: absolute; 
-		left: 536px; /* posiciona a 90px para a esquerda */ 
+		left: 64px; /* posiciona a 90px para a esquerda */ 
 		top: 660px; /* posiciona a 70px para baixo */
 		width: 180px; height: 180px; text-align: center; font-size: 24px;
 		text-align: center; font-size: 30px;
@@ -43,7 +181,7 @@
 	
 	#especialvampiro6 {
 		position: absolute; 
-		left: 536px; /* posiciona a 90px para a esquerda */ 
+		left: 64px; /* posiciona a 90px para a esquerda */ 
 		top: 430px; /* posiciona a 70px para baixo */
 		width: 180px; height: 180px; text-align: center; font-size: 24px;
 		text-align: center; font-size: 30px;
@@ -61,19 +199,43 @@
 	top: 814px; /* posiciona a 70px para baixo */
 	width: 120px; height: 120px;
 	}
+	#começarfaseteste {
+		position: absolute; 
+		left: 464px; /* posiciona a 90px para a esquerda */ 
+		top: 1214px; /* posiciona a 70px para baixo */
+		width: 67px; height: 59px; text-align: center; font-size: 24px;
+		background-color: Transparent;
+		}
+
+		#adminmostrar {
+			position: absolute; 
+			left: 719px; /* posiciona a 90px para a esquerda */ 
+			top: 1237px; /* posiciona a 70px para baixo */
+			width: 67px; height: 59px; text-align: center; font-size: 24px;
+			background-color: Transparent;
+			border: Transparent;
+			}
+			#adminocultar {
+				position: absolute; 
+				left: 719px; /* posiciona a 90px para a esquerda */ 
+				top: 1237px; /* posiciona a 70px para baixo */
+				width: 67px; height: 59px; text-align: center; font-size: 24px;
+				background-color: Transparent;
+				border: Transparent;
+				}
 #killall {
 	position: absolute; 
-	left: 629px; /* posiciona a 90px para a esquerda */ 
-	top: 1287px; /* posiciona a 70px para baixo */
-	background-color: Transparent;
+	left: 329px; /* posiciona a 90px para a esquerda */ 
+	top: 1214px; /* posiciona a 70px para baixo */
     width: 67px; height: 59px; text-align: center; font-size: 24px;
+	background-color: Transparent;
 	}
 	#addall {
 		position: absolute; 
-		left: 701px; /* posiciona a 90px para a esquerda */ 
-		top: 1287px; /* posiciona a 70px para baixo */
-		background-color: Transparent;
+		left: 397px; /* posiciona a 90px para a esquerda */ 
+		top: 1214px; /* posiciona a 70px para baixo */
 		width: 63px; height: 58px; text-align: center; font-size: 24px;
+		background-color: Transparent;
 		}
 #backgroundInventory {
 	position: absolute; 	
@@ -1199,8 +1361,8 @@ width: 130px; height: 125px; text-align: center; font-size: 80px;
 	}
 #sangramento2show {
 	position: absolute; 
-	left: 580px; /* posiciona a 90px para a esquerda */ 
-	top: 850px; /* posiciona a 70px para baixo */
+	left: 687px; /* posiciona a 90px para a esquerda */ 
+	top: 892px; /* posiciona a 70px para baixo */
 width: 70px; height: 70px; text-align: center; font-size: 50px;
 color: #fd0101;
 	background-color:rgba(0, 0, 0, 0);
@@ -1215,8 +1377,8 @@ color: #fd0101;
 	}
 #sangramento4show {
 	position: absolute; 
-	left: 580px; /* posiciona a 90px para a esquerda */ 
-	top: 630px; /* posiciona a 70px para baixo */
+	left: 694px; /* posiciona a 90px para a esquerda */ 
+	top: 672px; /* posiciona a 70px para baixo */
 width: 70px; height: 70px; text-align: center; font-size: 50px;
 color: #fd0101;
 	background-color:rgba(0, 0, 0, 0);
@@ -1231,8 +1393,8 @@ color: #fd0101;
 	}
 #sangramento6show {
 	position: absolute; 
-	left: 580px; /* posiciona a 90px para a esquerda */ 
-	top: 415px; /* posiciona a 70px para baixo */
+	left: 692px; /* posiciona a 90px para a esquerda */ 
+	top: 457px; /* posiciona a 70px para baixo */
 width: 70px; height: 70px; text-align: center; font-size: 50px;
 color: #fd0101;
 	background-color:rgba(0, 0, 0, 0);;
@@ -1252,7 +1414,7 @@ color: #fd0101;
 	}
 #vidaplayer2show {
 	position: absolute; 
-	left: 530px; /* posiciona a 90px para a esquerda */ 
+	left: 649px; /* posiciona a 90px para a esquerda */ 
 	top: 850px; /* posiciona a 70px para baixo */
 width: 70px; height: 70px; text-align: center; font-size: 50px;
 	color: #ffffff;
@@ -1268,7 +1430,7 @@ width: 70px; height: 70px; text-align: center; font-size: 50px;
 	}
 #vidaplayer4show {
 	position: absolute; 
-	left: 530px; /* posiciona a 90px para a esquerda */ 
+	left: 656px; /* posiciona a 90px para a esquerda */ 
 	top: 630px; /* posiciona a 70px para baixo */
 width: 70px; height: 70px; text-align: center; font-size: 50px;
 	color: #ffffff;
@@ -1284,7 +1446,7 @@ width: 70px; height: 70px; text-align: center; font-size: 50px;
 	}
 #vidaplayer6show {
 	position: absolute; 
-	left: 530px; /* posiciona a 90px para a esquerda */ 
+	left: 664px; /* posiciona a 90px para a esquerda */ 
 	top: 415px; /* posiciona a 70px para baixo */
 width: 70px; height: 70px; text-align: center; font-size: 50px;
 	color: #ffffff;

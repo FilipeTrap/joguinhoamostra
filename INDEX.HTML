@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/turnos.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/fases.js"></script>
+    <script src="js/selectplayer.js"></script>
+    <script src="js/caracters.js"></script>
+    
+  
+</head>
+
+<body>
+ 
+  <img src="assets/tutorial.png" id="tutorial"/>
+  
+  
+    <img src="assets/worldmap.gif" id="worldmap"/>
+    <img src="assets/gifteladetitulo.gif" id="gifteladetitulo"/>
+    <img src="assets/teladetitulo.png" id="teladetitulo"/>
+
+    <button  id="botaostart" onclick="botaostart()"><img src="assets/botaostart.gif" width="480" height="400" /></button>
+
+    <img src="assets/camp1.png" id="camp1" style="visibility:hidden"/>
+    
+  
+    <img src="assets/background1.jpg" id="background1" style="visibility:hidden"/>
+    <img src="assets/base.png" id="base" style="visibility:hidden"/>
+    
+
+<!--
+  mudei o especial mas esse ai da pra usar pra um novo personagem
+    <img src="https://i.imgur.com/z0Cj8Z5.gif" alt="espbarbaro1gif" id="espbarbaro1gif" style="visibility:hidden"/>
+    <img src="https://i.imgur.com/z0Cj8Z5.gif" alt="espbarbaro2gif" id="espbarbaro2gif" style="visibility:hidden"/>
+    <img src="https://i.imgur.com/z0Cj8Z5.gif" alt="espbarbaro3gif" id="espbarbaro3gif" style="visibility:hidden"/>
+    <img src="https://i.imgur.com/z0Cj8Z5.gif" alt="espbarbaro4gif" id="espbarbaro4gif" style="visibility:hidden"/>
+    <img src="https://i.imgur.com/z0Cj8Z5.gif" alt="espbarbaro5gif" id="espbarbaro5gif" style="visibility:hidden"/>
+    <img src="https://i.imgur.com/z0Cj8Z5.gif" alt="espbarbaro6gif" id="espbarbaro6gif" style="visibility:hidden"/>
+
+  -->
+
+    <img src="assets/tumba.png" width="200" height="300" alt="tumbaplayer1" id="tumbaplayer1" style="visibility:hidden"/>
+     <img src="assets/tumba.png" width="200" height="300" alt="tumbaplayer2" id="tumbaplayer2" style="visibility:hidden"/>
+      <img src="assets/tumba.png" width="200" height="300" alt="tumbaplayer3" id="tumbaplayer3" style="visibility:hidden"/>
+       <img src="assets/tumba.png" width="200" height="300" alt="tumbaplayer4" id="tumbaplayer4" style="visibility:hidden"/>
+        <img src="assets/tumba.png" width="200" height="300" alt="tumbaplayer5" id="tumbaplayer5" style="visibility:hidden"/>
+         <img src="assets/tumba.png" width="200" height="300" alt="tumbaplayer6" id="tumbaplayer6" style="visibility:hidden"/>
+    
+    
+    
+    <img src="assets/aura.gif" width="200" height="300" alt="auraplayer1" id="auraplayer1" style="visibility:hidden"/>
+     <img src="assets/aura.gif" width="200" height="300" alt="auraplayer2" id="auraplayer2" style="visibility:hidden"/>
+      <img src="assets/aura.gif" width="200" height="300" alt="auraplayer3" id="auraplayer3" style="visibility:hidden"/>
+       <img src="assets/aura.gif" width="200" height="300" alt="auraplayer4" id="auraplayer4" style="visibility:hidden"/>
+        <img src="assets/aura.gif" width="200" height="300" alt="auraplayer5" id="auraplayer5" style="visibility:hidden"/>
+         <img src="assets/aura.gif" width="200" height="300" alt="auraplayer6" id="auraplayer6" style="visibility:hidden"/>
+    
+    <img src="assets/neutralplayer.gif" width="200" height="300" alt="player1" id="player1" style="visibility:hidden"/>
+     <img src="assets/neutralplayer.gif" width="200" height="300" alt="player2" id="player2" style="visibility:hidden"/>
+      <img src="assets/neutralplayer.gif" width="200" height="300" alt="player3" id="player3" style="visibility:hidden"/>
+       <img src="assets/neutralplayer.gif" width="200" height="300" alt="player4" id="player4" style="visibility:hidden"/>
+        <img src="assets/neutralplayer.gif" width="200" height="300" alt="player5" id="player5" style="visibility:hidden"/>
+         <img src="assets/neutralplayer.gif" width="200" height="300" alt="player6" id="player6" style="visibility:hidden"/>
+    
+    <img src="assets/miss.gif" alt="missplayer1" id="missplayer1" style="visibility:hidden"/>
+    <img src="assets/miss.gif" alt="missplayer2" id="missplayer2" style="visibility:hidden"/>
+    <img src="assets/miss.gif" alt="missplayer3" id="missplayer3" style="visibility:hidden"/>
+    <img src="assets/miss.gif" alt="missplayer4" id="missplayer4" style="visibility:hidden"/>
+    <img src="assets/miss.gif" alt="missplayer5" id="missplayer5" style="visibility:hidden"/>
+    <img src="assets/miss.gif" alt="missplayer6" id="missplayer6" style="visibility:hidden"/>
+
+    <img src="assets/stum.gif" alt="stunplayer1" id="stunplayer1" style="visibility:hidden"/>
+    <img src="assets/stum.gif" alt="stunplayer2" id="stunplayer2" style="visibility:hidden"/>
+    <img src="assets/stum.gif" alt="stunplayer3" id="stunplayer3" style="visibility:hidden"/>
+    <img src="assets/stum.gif" alt="stunplayer4" id="stunplayer4" style="visibility:hidden"/>
+    <img src="assets/stum.gif" alt="stunplayer5" id="stunplayer5" style="visibility:hidden"/>
+    <img src="assets/stum.gif" alt="stunplayer6" id="stunplayer6" style="visibility:hidden"/>
+
+    <img src="assets/heal.gif" alt="healplayer1" id="healplayer1" style="visibility:hidden"/>
+    <img src="assets/heal.gif" alt="healplayer2" id="healplayer2" style="visibility:hidden"/>
+    <img src="assets/heal.gif" alt="healplayer3" id="healplayer3" style="visibility:hidden"/>
+    <img src="assets/heal.gif" alt="healplayer4" id="healplayer4" style="visibility:hidden"/>
+    <img src="assets/heal.gif" alt="healplayer5" id="healplayer5" style="visibility:hidden"/>
+    <img src="assets/heal.gif" alt="healplayer6" id="healplayer6" style="visibility:hidden"/>
+
+    <img src="assets/escudo.png" alt="escudoplayer1" id="escudoplayer1" style="visibility:hidden" />
+    <img src="assets/escudo.png" alt="escudoplayer2" id="escudoplayer2" style="visibility:hidden" />
+    <img src="assets/escudo.png" alt="escudoplayer3" id="escudoplayer3" style="visibility:hidden" />
+    <img src="assets/escudo.png" alt="escudoplayer4" id="escudoplayer4" style="visibility:hidden" />
+    <img src="assets/escudo.png" alt="escudoplayer5" id="escudoplayer5" style="visibility:hidden" />
+    <img src="assets/escudo.png" alt="escudoplayer6" id="escudoplayer6" style="visibility:hidden" />
+
+
+    
+    <img src="https://i.gifer.com/XDZT.gif" alt="testelocal" id="testelocal" width="50" height="50" style="visibility:hidden"/>
+    
+    <img src="assets/especialmago.gif" alt="especialmagohgif" id="especialmagohgif" width="50" height="50" style="visibility:hidden"/>
+    <img src="assets/especialmago.gif" alt="especialmagoegif" id="especialmagoegif" width="50" height="50" style="visibility:hidden"/>
+    
+    <div class="thebox"> 
+    
+      <button id="danonoinimigo2" onclick="danonoinimigo2()"style="visibility:hidden">Dano enemy 2 </button>
+      <button id="danonoinimigo4" onclick="danonoinimigo4()"style="visibility:hidden">Dano enemy 4 </button>
+      <button id="danonoinimigo6" onclick="danonoinimigo6()"style="visibility:hidden">Dano enemy 6 </button>
+
+      <button id="especialguerreiro2" onclick="especialguerreiro2()"style="visibility:hidden"> ESPECIAL 2</button>
+      <button id="especialguerreiro4" onclick="especialguerreiro4()"style="visibility:hidden"> ESPECIAL 4</button>
+      <button id="especialguerreiro6" onclick="especialguerreiro6()"style="visibility:hidden"> ESPECIAL 6</button>
+      
+
+      <button id="especialladino2" onclick="especialladino2()"style="visibility:hidden"> ESPECIAL </button>
+      <button id="especialladino4" onclick="especialladino4()"style="visibility:hidden"> ESPECIAL </button>
+      <button id="especialladino6" onclick="especialladino6()"style="visibility:hidden"> ESPECIAL </button>
+
+
+      <button id="especialmonge2" onclick="especialmonge2()"style="visibility:hidden"> ESPECIAL </button>
+      <button id="especialmonge4" onclick="especialmonge4()"style="visibility:hidden"> ESPECIAL </button>
+      <button id="especialmonge6" onclick="especialmonge6()"style="visibility:hidden"> ESPECIAL </button>
+
+      <button id="especialclerigo2" onclick="especialclerigo2()"style="visibility:hidden"> ESPECIAL 2</button>
+      <button id="especialclerigo4" onclick="especialclerigo4()"style="visibility:hidden"> ESPECIAL 4</button>
+      <button id="especialclerigo6" onclick="especialclerigo6()"style="visibility:hidden"> ESPECIAL 6</button>
+
+      <button id="especialbarbaro2" onclick="especialbarbaro2()"style="visibility:hidden"> ESPECIAL 2</button>
+      <button id="especialbarbaro4" onclick="especialbarbaro4()"style="visibility:hidden"> ESPECIAL 4</button>
+      <button id="especialbarbaro6" onclick="especialbarbaro6()"style="visibility:hidden"> ESPECIAL 6</button>
+
+      <button id="especialmago" onclick="especialmago()"style="visibility:hidden"> ESPECIAL </button>
+
+      <button id="especialvampiro2" onclick="especialvampiro2()"style="visibility:hidden"> ESPECIAL </button>
+      <button id="especialvampiro4" onclick="especialvampiro4()"style="visibility:hidden"> ESPECIAL </button>
+      <button id="especialvampiro6" onclick="especialvampiro6()"style="visibility:hidden"> ESPECIAL </button>
+      
+
+      <button id="botaorolarladino" onclick="attackladino()"style="visibility:hidden"><img src="assets/dadorolando.gif" width="132" height="132" />Rolar Lt1</button>
+      <button id="botaorolarmago" onclick="attackmago()"style="visibility:hidden"><img src="assets/dadorolando.gif" width="132" height="132" />Rolar Mt1</button>
+      <button  id="botaorolarguerreiro" onclick="attackguerreiro()"style="visibility:hidden"><img src="assets/dadorolando.gif" width="132" height="132" />Rolar Gt1</button>
+      <button  id="botaorolarmonge" onclick="attackmonge()"style="visibility:hidden"><img src="assets/dadorolando.gif" width="132" height="132" />Rolar monge</button>
+      <button  id="botaorolarclerigo" onclick="attackclerigo()"style="visibility:hidden"><img src="assets/dadorolando.gif" width="132" height="132" />Rolar clerigo</button>
+      <button  id="botaorolarbarbaro" onclick="attackbarbaro()"style="visibility:hidden"><img src="assets/dadorolando.gif" width="132" height="132" />Rolar barbaro</button>
+      <button  id="botaorolarvampiro" onclick="attackvampiro()"style="visibility:hidden"><img src="assets/dadorolando.gif" width="132" height="132" />Rolar vampiro</button>
+      
+      
+      
+      
+      <br>
+     
+    <textarea cols="40" rows="10" readonly="readonly" disabled="true" id="demo" style="resize: none"> </textarea>
+    
+    <div id="contadordano"></div>
+    <input type="text" id="contadordano" maxlength="5" disabled="true">
+    
+      <ul id="list"></ul>
+    <div id="vidaplayer1show"style="visibility:hidden"></div>
+    <input type="text" id="vidaplayer1show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="vidaplayer2show"style="visibility:hidden"></div>
+    <input type="text" id="vidaplayer2show" maxlength="5" disabled="true"style="visibility:hidden">
+    <div id="vidaplayer3show"style="visibility:hidden"></div>
+    <input type="text" id="vidaplayer3show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="vidaplayer4show"style="visibility:hidden"></div>
+    <input type="text" id="vidaplayer4show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="vidaplayer5show"style="visibility:hidden"></div>
+    <input type="text" id="vidaplayer5show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="vidaplayer6show"style="visibility:hidden"></div>
+    <input type="text" id="vidaplayer6show" maxlength="5" disabled="true" style="visibility:hidden">
+    
+    <ul id="list"></ul>
+    <div id="sangramento1show"style="visibility:hidden"></div>
+    <input type="text" id="sangramento1show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="sangramento2show"style="visibility:hidden"></div>
+    <input type="text" id="sangramento2show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="sangramento3show"style="visibility:hidden"></div>
+    <input type="text" id="sangramento3show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="sangramento4show"style="visibility:hidden"></div>
+    <input type="text" id="sangramento4show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="sangramento5show"style="visibility:hidden"></div>
+    <input type="text" id="sangramento5show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="sangramento6show"style="visibility:hidden"></div>
+    <input type="text" id="sangramento6show" maxlength="5" disabled="true" style="visibility:hidden">
+    
+    <ul id="list"></ul>
+    <div id="escudoplayer1show"style="visibility:hidden"></div>
+    <input type="text" id="escudoplayer1show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="escudoplayer2show"style="visibility:hidden"></div>
+    <input type="text" id="escudoplayer2show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="escudoplayer3show"style="visibility:hidden"></div>
+    <input type="text" id="escudoplayer3show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="escudoplayer4show"style="visibility:hidden"></div>
+    <input type="text" id="escudoplayer4show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="escudoplayer5show"style="visibility:hidden"></div>
+    <input type="text" id="escudoplayer5show" maxlength="5" disabled="true" style="visibility:hidden">
+    <div id="escudoplayer6show"style="visibility:hidden"></div>
+    <input type="text" id="escudoplayer6show" maxlength="5" disabled="true" style="visibility:hidden">
+    
+    
+    
+    <img src="assets/voltareditarequipe.png" width="585" height="380" alt="BackEditarEquipe" id="BackEditarEquipe" style="visibility:hidden"/>
+
+
+
+
+    
+    <button  id="setastart" onclick="setastart()" style="visibility:hidden"><img src="assets/seta.gif" width="72" height="52" /></button>
+
+    <button  id="setafase1cima" onclick="setafase1cima()"style="visibility:hidden"><img src="assets/seta.gif" width="72" height="52" /></button>
+    <button  id="setafase1traz" onclick="setafase1traz()"style="visibility:hidden"><img src="assets/seta.gif" width="72" height="52" /></button>
+    <button  id="setafase1frente" onclick="setafase1frente()"style="visibility:hidden"><img src="assets/seta.gif" width="72" height="52" /></button>
+    
+    <button  id="setafase2cima" onclick="setafase2cima()"style="visibility:hidden"><img src="assets/seta.gif" width="72" height="52" /></button>
+    <button  id="setafase2baixo" onclick="setafase2baixo()"style="visibility:hidden"><img src="assets/seta.gif" width="72" height="52" /></button>
+
+    <button  id="setafase3baixo" onclick="setafase3baixo()"style="visibility:hidden"><img src="assets/seta.gif" width="72" height="52" /></button>
+     
+ <button  id="setafase4cima" onclick="setafase4cima()"style="visibility:hidden"><img src="assets/seta.gif" width="72" height="52" /></button>
+<button  id="setafase4baixo" onclick="setafase4baixo()"style="visibility:hidden"><img src="assets/seta.gif" width="72" height="52" /></button>
+      
+<button  id="setafase5baixo" onclick="setafase5baixo()"style="visibility:hidden"><img src="assets/seta.gif" width="72" height="52" /></button>
+        
+
+
+    <img src="assets/miniplayer.png" alt="miniplayer1" id="miniplayer1" style="visibility:hidden"/>
+    <img src="assets/miniplayer.png" alt="miniplayer3" id="miniplayer3" style="visibility:hidden"/>
+    <img src="assets/miniplayer.png" alt="miniplayer5" id="miniplayer5" style="visibility:hidden"/>
+    <img src="assets/cadeado.png" alt="cadeado" id="cadeado" style="visibility:hidden"/>
+  
+ 
+    </div>
+    
+    
+    <button id="selectplayer1" onclick="selectplayer1()" style="visibility:hidden">Select</button>
+    <select id="Selectchar1" style="visibility:hidden"></select>
+    
+    <button id="selectplayer3" onclick="selectplayer3()" style="visibility:hidden">Select</button>
+    <select id="Selectchar3" style="visibility:hidden">    </select>
+    
+    <button id="selectplayer5" onclick="selectplayer5()" style="visibility:hidden">Select</button>
+    <select id="Selectchar5" style="visibility:hidden">    </select>
+    
+    <button id="botaocomeçar" onclick="começar()" style="visibility:hidden">COMEÇAR</button>
+   
+  
+    
+    <img src="assets/dice.png" style="visibility:hidden" id="dice1"/>
+    <img src="assets/dice.png" style="visibility:hidden" id="dice2"/>
+    <img src="assets/dice.png" style="visibility:hidden" id="dice3"/>
+    <img src="assets/dice.png" style="visibility:hidden" id="dice4"/>
+    <img src="assets/dice.png" style="visibility:hidden" id="dice5"/>
+    <img src="assets/dice.png" style="visibility:hidden" id="dice6"/>
+    <img src="assets/dice.png" style="visibility:hidden" id="dice7"/>
+    <img src="assets/dice.png" style="visibility:hidden" id="dice8"/>
+    <img src="assets/dice.png" style="visibility:hidden" id="dice9"/>
+    <img src="assets/dice.png" style="visibility:hidden" id="dice10"/>
+
+
+
+
+<!--
+  world map
+-->
+
+<img src="assets/caracter.png" id="WCharStandFront"style="visibility:hidden"/> 
+
+
+
+<img src="assets/backgroundInventory.png" id="backgroundInventory" style="visibility:hidden"/>
+
+
+  <div id="divGuerreiro" class="container">
+    <img src="assets/guerreiro.png" alt="guerreiro" id="drag1"  draggable="true" ondragstart="drag(event)"  width="146" height="166">
+  </div>
+  <div id="divLadino" class="container">
+    <img src="assets/ladino.png" alt="ladino" id="drag2"  draggable="true" ondragstart="drag(event)"  width="146" height="166">
+  </div>
+    <div id="divMago" class="container">
+    <img src="assets/mago.png" alt="mago" id="drag3"  draggable="true" ondragstart="drag(event)"  width="146" height="166">
+  </div>
+  
+  <div id="divMonge" class="container">
+    <img src="assets/monge.png" alt="monge" id="drag4"  draggable="true" ondragstart="drag(event)"  width="146" height="166">
+  </div>
+  <div id="divClerigo" class="container">
+    <img src="assets/clerigo.png" alt="clerigo" id="drag5"  draggable="true" ondragstart="drag(event)"  width="146" height="166">
+  </div>
+  <div id="divBarbaro" class="container">
+    <img src="assets/barbaro.png" alt="barbaro" id="drag6"  draggable="true" ondragstart="drag(event)"  width="146" height="166">
+  </div>
+ <div id="divVampiro" class="container">
+    <img src="assets/vampiro.png" alt="vampiro" id="drag7"  draggable="true" ondragstart="drag(event)"  width="146" height="166">
+  </div>
+
+
+  <div id="divRight1" ondrop="drop01(event)" ondragover="allowDrop(event)" class="container">
+    <img src="assets/okdragdrop.png" alt="nada"  draggable="false"  id="drag0" width="146" height="166">
+ 
+  </div>
+ <div id="divRight2" ondrop="drop02(event)" ondragover="allowDrop(event)" class="container">
+     <img src="assets/okdragdrop.png" alt="nada"  draggable="false"  id="drag0" width="146" height="166">
+ </div>
+  <div id="divRight3" ondrop="drop03(event)" ondragover="allowDrop(event)" class="container">
+  <img src="assets/okdragdrop.png" alt="nada" draggable="false"  id="drag0" width="146" height="166">
+  </div>
+
+
+  <button id="EditarEquipe" onclick="EditarEquipe()"style="visibility:hidden"><img src="assets/voltareditarequipe.png" width="585" height="380" /></button>
+  <button id="VoltarEditarEquipe" onclick="VoltarEditarEquipe()"style="visibility:hidden">Voltar</button>
+
+
+
+    <img src="assets/youwin.gif" id="youwingif" style="visibility:hidden"/>   
+    <img src="assets/youlose.gif" id="youlosegif" style="visibility:hidden"/>  
+
+<!--
+  botão usado pra testes
+
+-->
+<button id="killall" onclick="killall()" style="visibility:hidden" >KILL ALL</button>
+<button id="addall" onclick="addall()" style="visibility:hidden" >add all</button>
+<button id="começarfaseteste" onclick="começarfaseteste()" style="visibility:hidden" >fase teste</button>
+
+<button id="adminmostrar" onclick="adminmostrar()"><img src="assets/dice.png" width="20" height="20"/></button>
+<button id="adminocultar" onclick="adminocultar()" style="visibility:hidden" ><img src="assets/okdragdrop.png" width="20" height="20"/></button>
+
+<button id="botaocomeçarfase1" onclick="começarfase1()" style="visibility:hidden">COMEÇAR FASE 1</button>
+<button id="botaocomeçarfase2" onclick="começarfase2()" style="visibility:hidden">COMEÇAR FASE 2</button>
+<button id="botaocomeçarfase3" onclick="começarfase3()" style="visibility:hidden">COMEÇAR FASE 3</button>
+<button id="botaocomeçarfase4" onclick="começarfase4()" style="visibility:hidden">COMEÇAR FASE 4</button>
+<button id="botaocomeçarfase5" onclick="começarfase5()" style="visibility:hidden">COMEÇAR FASE 5</button>
+
+<button id="botaocomeçarfase1a" onclick="EditarEquipe()" style="visibility:hidden">FASE 1</button>
+<button id="botaocomeçarfase2a" onclick="EditarEquipe()" style="visibility:hidden">FASE 2</button>
+<button id="botaocomeçarfase3a" onclick="EditarEquipe()" style="visibility:hidden">FASE 3</button>
+<button id="botaocomeçarfase4a" onclick="EditarEquipe()" style="visibility:hidden">FASE 4</button>
+<button id="botaocomeçarfase5a" onclick="EditarEquipe()" style="visibility:hidden">FASE 5</button>
+
+
+
+</body>
+
+<script> // ======================SCRIPT==========================
+
+
+
+let escudoplayer1 = 0;
+let escudoplayer2 = 0;
+let escudoplayer3 = 0;
+let escudoplayer4 = 0;
+let escudoplayer5 = 0;
+let escudoplayer6 = 0;
+
+var escudoplayer1show = document.getElementById('escudoplayer1show'); 
+ 
+var escudoplayer2show = document.getElementById('escudoplayer2show'); 
+ 
+var escudoplayer3show = document.getElementById('escudoplayer3show'); 
+ 
+var escudoplayer4show = document.getElementById('escudoplayer4show'); 
+
+var escudoplayer5show = document.getElementById('escudoplayer5show'); 
+ 
+var escudoplayer6show = document.getElementById('escudoplayer6show'); 
+
+
+function morreuplayer1(){
+
+document.getElementById("player1").style.visibility='hidden';
+          document.getElementById("tumbaplayer1").style.visibility='visible';
+          document.getElementById('stunplayer1').style.visibility='hidden';
+          document.getElementById('sangramento1show').style.visibility='hidden';
+          document.getElementById('vidaplayer1show').style.visibility='hidden';
+          sangramento1 = 0;
+          if (vidaplayer1 < 1 && vidaplayer3 < 1 && vidaplayer5 <1 ){
+            document.getElementById("auraplayer1").style.visibility='hidden';
+document.getElementById("auraplayer2").style.visibility='hidden';
+document.getElementById("auraplayer3").style.visibility='hidden';
+document.getElementById("auraplayer4").style.visibility='hidden';
+document.getElementById("auraplayer5").style.visibility='hidden';
+document.getElementById("auraplayer6").style.visibility='hidden';
+            setTimeout(function() {
+                return youlose();
+              }, 600)
+          };
+};
+
+function morreuplayer2(){
+
+  document.getElementById("player2").style.visibility='hidden';
+            document.getElementById("tumbaplayer2").style.visibility='visible';
+            document.getElementById('stunplayer2').style.visibility='hidden';
+            document.getElementById('sangramento2show').style.visibility='hidden';
+            document.getElementById('vidaplayer2show').style.visibility='hidden';
+            sangramento2 = 0;
+            if (vidaplayer2 < 1 && vidaplayer4 < 1 && vidaplayer6 <1 ){
+              document.getElementById("auraplayer1").style.visibility='hidden';
+document.getElementById("auraplayer2").style.visibility='hidden';
+document.getElementById("auraplayer3").style.visibility='hidden';
+document.getElementById("auraplayer4").style.visibility='hidden';
+document.getElementById("auraplayer5").style.visibility='hidden';
+document.getElementById("auraplayer6").style.visibility='hidden';
+              setTimeout(function() {
+                return youwin();
+              }, 600)
+            
+            };
+};
+
+function morreuplayer3(){
+
+document.getElementById("player3").style.visibility='hidden';
+          document.getElementById("tumbaplayer3").style.visibility='visible';
+          document.getElementById('stunplayer3').style.visibility='hidden';
+          document.getElementById('sangramento3show').style.visibility='hidden';
+          document.getElementById('vidaplayer3show').style.visibility='hidden';
+          sangramento3 = 0;
+          if (vidaplayer1 < 1 && vidaplayer3 < 1 && vidaplayer5 <1 ){
+            document.getElementById("auraplayer1").style.visibility='hidden';
+document.getElementById("auraplayer2").style.visibility='hidden';
+document.getElementById("auraplayer3").style.visibility='hidden';
+document.getElementById("auraplayer4").style.visibility='hidden';
+document.getElementById("auraplayer5").style.visibility='hidden';
+document.getElementById("auraplayer6").style.visibility='hidden';
+            setTimeout(function() {
+                return youlose();
+              }, 600)
+          };
+};
+
+function morreuplayer4(){
+
+document.getElementById("player4").style.visibility='hidden';
+          document.getElementById("tumbaplayer4").style.visibility='visible';
+          document.getElementById('stunplayer4').style.visibility='hidden';
+          document.getElementById('sangramento4show').style.visibility='hidden';
+          document.getElementById('vidaplayer4show').style.visibility='hidden';
+          sangramento4 = 0;
+          if (vidaplayer2 < 1 && vidaplayer4 < 1 && vidaplayer6 <1 ){
+            document.getElementById("auraplayer1").style.visibility='hidden';
+document.getElementById("auraplayer2").style.visibility='hidden';
+document.getElementById("auraplayer3").style.visibility='hidden';
+document.getElementById("auraplayer4").style.visibility='hidden';
+document.getElementById("auraplayer5").style.visibility='hidden';
+document.getElementById("auraplayer6").style.visibility='hidden';
+              setTimeout(function() {
+                return youwin();
+              }, 600)
+            
+            };
+};
+
+function morreuplayer5(){
+
+document.getElementById("player5").style.visibility='hidden';
+          document.getElementById("tumbaplayer5").style.visibility='visible';
+          document.getElementById('stunplayer5').style.visibility='hidden';
+          document.getElementById('sangramento5show').style.visibility='hidden';
+          document.getElementById('vidaplayer5show').style.visibility='hidden';
+          sangramento5 = 0;
+          if (vidaplayer1 < 1 && vidaplayer3 < 1 && vidaplayer5 <1 ){
+            document.getElementById("auraplayer1").style.visibility='hidden';
+document.getElementById("auraplayer2").style.visibility='hidden';
+document.getElementById("auraplayer3").style.visibility='hidden';
+document.getElementById("auraplayer4").style.visibility='hidden';
+document.getElementById("auraplayer5").style.visibility='hidden';
+document.getElementById("auraplayer6").style.visibility='hidden';
+            setTimeout(function() {
+                return youlose();
+              }, 600)
+          };
+};
+
+function morreuplayer6(){
+
+document.getElementById("player6").style.visibility='hidden';
+          document.getElementById("tumbaplayer6").style.visibility='visible';
+          document.getElementById('stunplayer6').style.visibility='hidden';
+          document.getElementById('sangramento6show').style.visibility='hidden';
+          document.getElementById('vidaplayer6show').style.visibility='hidden';
+          sangramento6 = 0;
+          if (vidaplayer2 < 1 && vidaplayer4 < 1 && vidaplayer6 <1 ){
+            document.getElementById("auraplayer1").style.visibility='hidden';
+document.getElementById("auraplayer2").style.visibility='hidden';
+document.getElementById("auraplayer3").style.visibility='hidden';
+document.getElementById("auraplayer4").style.visibility='hidden';
+document.getElementById("auraplayer5").style.visibility='hidden';
+document.getElementById("auraplayer6").style.visibility='hidden';
+              setTimeout(function() {
+                return youwin();
+              }, 600)
+            
+            };
+};
+
+function youwin(){
+  
+  document.getElementById('youwingif').style.visibility='visible';
+
+  document.getElementById("worldmap").style.visibility='visible';
+  
+  
+  //document.getElementById("BackEditarEquipe").style.visibility='visible';
+  ////document.getElementById("miniplayer1").style.visibility='visible';
+  ////document.getElementById("miniplayer3").style.visibility='visible';
+  ////document.getElementById("miniplayer5").style.visibility='visible';
+  document.getElementById("WCharStandFront").style.visibility='visible';
+
+
+//document.getElementById("EditarEquipe").style.visibility='visible';
+document.getElementById("VoltarEditarEquipe").style.visibility='hidden';
+document.getElementById("setastart").style.visibility='hidden';
+
+
+
+
+document.getElementById("tumbaplayer1").style.visibility='hidden';
+document.getElementById("tumbaplayer2").style.visibility='hidden';
+document.getElementById("tumbaplayer3").style.visibility='hidden';
+document.getElementById("tumbaplayer4").style.visibility='hidden';
+document.getElementById("tumbaplayer5").style.visibility='hidden';
+document.getElementById("tumbaplayer6").style.visibility='hidden';
+
+document.getElementById("contadordano").style.visibility='hidden';
+document.getElementById("background1").style.visibility='hidden';
+document.getElementById("base").style.visibility='hidden';
+
+document.getElementById("stunplayer1").style.visibility='hidden';
+document.getElementById("stunplayer2").style.visibility='hidden';
+document.getElementById("stunplayer3").style.visibility='hidden';
+document.getElementById("stunplayer4").style.visibility='hidden';
+document.getElementById("stunplayer5").style.visibility='hidden';
+document.getElementById("stunplayer6").style.visibility='hidden';
+
+    //document.getElementById("BackEditarEquipe").style.visibility='visible';
+    ////document.getElementById("miniplayer1").style.visibility='visible';
+    ////document.getElementById("miniplayer3").style.visibility='visible';
+    ////document.getElementById("miniplayer5").style.visibility='visible';
+    document.getElementById("WCharStandFront").style.visibility='visible';
+  
+    document.getElementById("cadeado").style.visibility='visible';
+
+
+//visivel
+
+//document.getElementById('base').style.visibility='hidden';
+document.getElementById('dice1').style.visibility='hidden';
+document.getElementById('dice2').style.visibility='hidden';
+document.getElementById('dice3').style.visibility='hidden';
+document.getElementById('dice4').style.visibility='hidden';
+document.getElementById('dice5').style.visibility='hidden';
+document.getElementById('dice6').style.visibility='hidden';
+document.getElementById('dice7').style.visibility='hidden';
+document.getElementById('dice8').style.visibility='hidden';
+document.getElementById('dice9').style.visibility='hidden';
+document.getElementById('dice10').style.visibility='hidden';
+
+document.getElementById("player1").style.visibility='hidden';
+document.getElementById("player3").style.visibility='hidden';
+document.getElementById("player5").style.visibility='hidden';
+
+document.getElementById('player2').style.visibility='hidden';
+document.getElementById('player4').style.visibility='hidden';  //inimigos
+document.getElementById('player6').style.visibility='hidden';
+
+document.getElementById('vidaplayer1show').style.visibility='hidden';
+document.getElementById('vidaplayer2show').style.visibility='hidden';
+document.getElementById('vidaplayer3show').style.visibility='hidden';
+document.getElementById('vidaplayer4show').style.visibility='hidden';
+document.getElementById('vidaplayer5show').style.visibility='hidden';
+document.getElementById('vidaplayer6show').style.visibility='hidden';
+
+document.getElementById('escudoplayer1show').style.visibility='hidden';
+document.getElementById('escudoplayer2show').style.visibility='hidden';
+document.getElementById('escudoplayer3show').style.visibility='hidden';
+document.getElementById('escudoplayer4show').style.visibility='hidden';
+document.getElementById('escudoplayer5show').style.visibility='hidden';
+document.getElementById('escudoplayer6show').style.visibility='hidden';
+
+document.getElementById('sangramento1show').style.visibility='hidden';
+document.getElementById('sangramento2show').style.visibility='hidden';
+document.getElementById('sangramento3show').style.visibility='hidden';
+document.getElementById('sangramento4show').style.visibility='hidden';
+document.getElementById('sangramento5show').style.visibility='hidden';
+document.getElementById('sangramento6show').style.visibility='hidden';
+
+sangramento1 = 0
+sangramento2 = 0
+sangramento3 = 0
+sangramento4 = 0
+sangramento5 = 0
+sangramento6 = 0
+
+escudoplayer1 = 0
+escudoplayer2 = 0
+escudoplayer3 = 0
+escudoplayer4 = 0
+escudoplayer5 = 0
+escudoplayer6 = 0
+
+atordoadoplayer1 = 0;
+atordoadoplayer2 = 0;
+atordoadoplayer3 = 0;
+atordoadoplayer4 = 0;
+atordoadoplayer5 = 0;
+atordoadoplayer6 = 0;
+
+furiabarbaro1 = 0;
+furiabarbaro2 = 0;
+furiabarbaro3 = 0;
+furiabarbaro4 = 0;
+furiabarbaro5 = 0;
+furiabarbaro6 = 0;
+
+
+
+    if (fase == 1){
+       // addmonge();
+       desbloqueadomonge = "none"
+       document.getElementById("setafase1cima").className = "none";
+       document.getElementById("setafase1cima").style.visibility='visible';
+       if (desbloqueadobarbaro == "none"){
+        document.getElementById("setafase1frente").style.visibility='visible';
+       }
+
+      }
+      if (fase == 2){
+        //addclerigo();
+        document.getElementById("setafase2cima").className = "none";
+        desbloqueadoclerigo = "none"
+        document.getElementById("setafase2cima").style.visibility='visible';
+document.getElementById("setafase2baixo").style.visibility='visible';
+      }
+      if (fase == 3){
+        //addbarbaro1();
+        document.getElementById("setafase3baixo").style.visibility='visible';
+        desbloqueadobarbaro = "none"
+        document.getElementById("cadeado").className = "container";
+       
+
+      }
+      if (fase == 4){
+        //addbarbaro1();
+        document.getElementById("setafase4cima").className = "none";
+        document.getElementById("setafase4cima").style.visibility='visible';
+        document.getElementById("setafase4baixo").style.visibility='visible';
+      }
+      if (fase == 5){
+        //addbarbaro1();
+        document.getElementById("setafase5baixo").style.visibility='visible';
+        desbloqueadovampiro = "none"
+      }
+
+    setTimeout(function() {
+      
+      document.getElementById("auraplayer1").style.visibility='hidden';
+document.getElementById("auraplayer2").style.visibility='hidden';
+document.getElementById("auraplayer3").style.visibility='hidden';
+document.getElementById("auraplayer4").style.visibility='hidden';
+document.getElementById("auraplayer5").style.visibility='hidden';
+document.getElementById("auraplayer6").style.visibility='hidden';
+document.getElementById('youwingif').style.visibility='hidden';
+        }, 2000)
+  
+      };
+
+function youlose(){
+  
+  document.getElementById('youlosegif').style.visibility='visible';
+
+};
+
+
+
+
+
+
+function começarfase1(){
+enemyslot2 = 3;
+enemyslot4 = 4;
+enemyslot6 = 1;
+vidaplayer1 = slot1[3]
+vidaplayer3 = slot3[3]
+vidaplayer5 = slot5[3]
+
+player1.setAttribute('src', slot1[1]);
+player3.setAttribute('src', slot3[1]);
+player5.setAttribute('src', slot5[1]);
+
+vidaplayer2 = slot2[3]
+vidaplayer4 = slot4[3]
+vidaplayer6 = slot6[3]
+document.getElementById("setafase1cima").style.visibility='hidden';
+  document.getElementById("setafase1frente").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase1").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase1a").style.visibility='hidden';
+return começar();
+
+};
+
+function começarfase2(){
+enemyslot2 = 3;
+enemyslot4 = 5;
+enemyslot6 = 2;
+
+player1.setAttribute('src', slot1[1]);
+player3.setAttribute('src', slot3[1]);
+player5.setAttribute('src', slot5[1]);
+
+vidaplayer1 = slot1[3]
+vidaplayer3 = slot3[3]
+vidaplayer5 = slot5[3]
+vidaplayer2 = slot2[3]
+vidaplayer4 = slot4[3]
+vidaplayer6 = slot6[3]
+document.getElementById("setafase2cima").style.visibility='hidden';
+  document.getElementById("setafase2baixo").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase2").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase2a").style.visibility='hidden';
+return começar();
+
+};
+function começarfase3(){
+enemyslot2 = 5;//5
+enemyslot4 = 6;
+enemyslot6 = 4;//4
+
+player1.setAttribute('src', slot1[1]);
+player3.setAttribute('src', slot3[1]);
+player5.setAttribute('src', slot5[1]);
+
+vidaplayer1 = slot1[3]
+vidaplayer3 = slot3[3]
+vidaplayer5 = slot5[3]
+vidaplayer2 = slot2[3]
+vidaplayer4 = slot4[3]
+vidaplayer6 = slot6[3]
+
+  document.getElementById("setafase3baixo").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase3").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase3a").style.visibility='hidden';
+return começar();
+
+};
+function começarfase4(){
+enemyslot2 = 4;
+enemyslot4 = 5;
+enemyslot6 = 6;
+
+player1.setAttribute('src', slot1[1]);
+player3.setAttribute('src', slot3[1]);
+player5.setAttribute('src', slot5[1]);
+
+vidaplayer1 = slot1[3]
+vidaplayer3 = slot3[3]
+vidaplayer5 = slot5[3]
+vidaplayer2 = slot2[3]
+vidaplayer4 = slot4[3]
+vidaplayer6 = slot6[3]
+
+document.getElementById("setafase4cima").style.visibility='hidden';
+  document.getElementById("setafase4baixo").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase4").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase4a").style.visibility='hidden';
+return começar();
+
+};
+function começarfase5(){
+enemyslot2 = 4;
+enemyslot4 = 7;
+enemyslot6 = 5;
+
+player1.setAttribute('src', slot1[1]);
+player3.setAttribute('src', slot3[1]);
+player5.setAttribute('src', slot5[1]);
+
+vidaplayer1 = slot1[3]
+vidaplayer3 = slot3[3]
+vidaplayer5 = slot5[3]
+vidaplayer2 = slot2[3]
+vidaplayer4 = slot4[3]
+vidaplayer6 = slot6[3]
+
+
+  document.getElementById("setafase5baixo").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase5").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase5a").style.visibility='hidden';
+return começar();
+
+};
+
+
+function setastart(){
+
+  document.getElementById('WCharStandFront').className = 'aninsetastart'; //animação
+  document.getElementById("botaocomeçarfase1a").style.visibility='visible';
+  
+  document.getElementById("setastart").style.visibility='hidden';
+  document.getElementById("setafase1cima").style.visibility='visible';
+
+  if(desbloqueadobarbaro == "none"){
+    document.getElementById("setafase1frente").style.visibility='visible';
+  }
+  
+  fase = 1;
+
+};
+
+function setafase1frente(){
+  document.getElementById('WCharStandFront').className = 'aninsetafase1frente'; //animação
+  document.getElementById("botaocomeçarfase1a").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase4a").style.visibility='visible';
+  document.getElementById("setafase1cima").style.visibility='hidden';
+  document.getElementById("setafase1frente").style.visibility='hidden';
+  document.getElementById("setafase4cima").style.visibility='visible';
+  document.getElementById("setafase4baixo").style.visibility='visible';
+  fase = 4;
+
+};
+function setafase1cima(){
+  document.getElementById('WCharStandFront').className = 'aninsetafase1cima'; //animação
+  document.getElementById("botaocomeçarfase1a").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase2a").style.visibility='visible';
+  document.getElementById("setafase1cima").style.visibility='hidden';
+  document.getElementById("setafase1frente").style.visibility='hidden';
+  document.getElementById("setafase2baixo").style.visibility='visible';
+  document.getElementById("setafase2cima").style.visibility='visible';
+  fase = 2;
+};
+
+
+function setafase2cima(){
+  document.getElementById('WCharStandFront').className = 'aninsetafase2cima'; //animação
+  document.getElementById("botaocomeçarfase3a").style.visibility='visible';
+  document.getElementById("botaocomeçarfase2a").style.visibility='hidden';
+  document.getElementById("setafase2baixo").style.visibility='hidden';
+  document.getElementById("setafase2cima").style.visibility='hidden';
+  document.getElementById("setafase3baixo").style.visibility='visible';
+  fase = 3;
+};
+function setafase2baixo(){
+  document.getElementById('WCharStandFront').className = 'aninsetafase2baixo'; //animação
+  document.getElementById("botaocomeçarfase1a").style.visibility='visible';
+  document.getElementById("botaocomeçarfase2a").style.visibility='hidden';
+  document.getElementById("setafase1cima").style.visibility='visible';
+  document.getElementById("setafase2baixo").style.visibility='hidden';
+  document.getElementById("setafase2cima").style.visibility='hidden';
+
+  if(desbloqueadobarbaro == "none"){
+    document.getElementById("setafase1frente").style.visibility='visible';
+  }
+  fase = 1;
+};
+
+function setafase3baixo(){
+  document.getElementById('WCharStandFront').className = 'aninsetafase3baixo'; //animação
+  document.getElementById("botaocomeçarfase2a").style.visibility='visible';
+  document.getElementById("botaocomeçarfase3a").style.visibility='hidden';
+  document.getElementById("setafase2baixo").style.visibility='visible';
+  document.getElementById("setafase2cima").style.visibility='visible';
+  document.getElementById("setafase3baixo").style.visibility='hidden';
+  
+  fase = 2;
+};
+
+function setafase4cima(){
+  document.getElementById("botaocomeçarfase5a").style.visibility='visible';
+  document.getElementById("botaocomeçarfase4a").style.visibility='hidden';
+  
+  document.getElementById('WCharStandFront').className = 'aninsetafase4cima'; //animação
+  document.getElementById("setafase4baixo").style.visibility='hidden';
+  document.getElementById("setafase4cima").style.visibility='hidden';
+  document.getElementById("setafase5baixo").style.visibility='visible';
+
+  fase = 5;
+};
+function setafase4baixo(){
+  
+  document.getElementById('WCharStandFront').className = 'aninsetafase4baixo'; //animação
+  document.getElementById("botaocomeçarfase1a").style.visibility='visible';
+  document.getElementById("botaocomeçarfase4a").style.visibility='hidden';
+  document.getElementById("setafase4baixo").style.visibility='hidden';
+  document.getElementById("setafase4cima").style.visibility='hidden';
+  document.getElementById("setafase1cima").style.visibility='visible';
+  document.getElementById("setafase1frente").style.visibility='visible';
+  fase = 1;
+};
+
+function setafase5baixo(){
+  document.getElementById("botaocomeçarfase4a").style.visibility='visible';
+  document.getElementById("botaocomeçarfase5a").style.visibility='hidden';
+  document.getElementById("setafase4baixo").style.visibility='visible';
+  document.getElementById("setafase4cima").style.visibility='visible';
+  document.getElementById("setafase5baixo").style.visibility='hidden';
+  
+  document.getElementById('WCharStandFront').className = 'aninsetafase5baixo'; //animação
+  fase = 4;
+};
+
+
+
+let desbloqueadomonge = "container";
+let desbloqueadoclerigo = "container";
+let desbloqueadobarbaro = "container";
+let desbloqueadovampiro = "container";
+
+
+
+
+
+function killall(){
+  vidaplayer2 = 1;
+vidaplayer4 = 1;
+vidaplayer6 = 1;
+
+                vidaplayer2show = document.getElementById('vidaplayer2show'); 
+                vidaplayer2show.innerHTML = vidaplayer2
+                vidaplayer4show = document.getElementById('vidaplayer4show'); 
+                vidaplayer4show.innerHTML = vidaplayer4
+                vidaplayer6show = document.getElementById('vidaplayer6show'); 
+                vidaplayer6show.innerHTML = vidaplayer6
+};
+
+function addall(){
+desbloqueadomonge = "none";
+desbloqueadoclerigo = "none";
+desbloqueadobarbaro = "none";
+desbloqueadovampiro = "none";
+/*
+escudoplayer1 = 10
+escudoplayer3 = 10
+escudoplayer5 = 10
+
+
+document.getElementById("escudoplayer1show").style.visibility='visible'
+document.getElementById("escudoplayer3show").style.visibility='visible'
+document.getElementById("escudoplayer5show").style.visibility='visible'
+escudoplayer1show = document.getElementById('escudoplayer1show'); 
+escudoplayer1show.innerHTML = escudoplayer1
+escudoplayer3show = document.getElementById('escudoplayer3show'); 
+escudoplayer3show.innerHTML = escudoplayer3
+escudoplayer5show = document.getElementById('escudoplayer5show'); 
+escudoplayer5show.innerHTML = escudoplayer5
+*/
+/*
+document.getElementById("escudoplayer2show").style.visibility='visible'
+document.getElementById("escudoplayer4show").style.visibility='visible'
+document.getElementById("escudoplayer6show").style.visibility='visible'
+escudoplayer2show = document.getElementById('escudoplayer2show'); 
+escudoplayer2show.innerHTML = escudoplayer2
+escudoplayer4show = document.getElementById('escudoplayer4show'); 
+escudoplayer4show.innerHTML = escudoplayer4
+escudoplayer6show = document.getElementById('escudoplayer6show'); 
+escudoplayer6show.innerHTML = escudoplayer6
+*/
+};
+
+//arrays
+         //       0 vida        1 imagem                  2 inimigo       3 vida original pra não aumentar a vida maxima
+const guerreiro = [100, 'assets/guerreiro.png', guerreiroenemy, 100, 'guerreiro'];
+const ladino = [60, 'assets/ladino.png', ladinoenemy, 60,'ladino'];
+const mago = [50, 'assets/mago.png', magoenemy, 50, 'mago'];
+const monge = [70, 'assets/monge.png', mongeenemy, 70,'monge'];
+const clerigo = [80, 'assets/clerigo.png', clerigoenemy, 80,'clerigo'];
+const barbaro = [120,'assets/barbaro.png', barbaroenemy, 120,'barbaro']
+const vampiro = [80,'assets/vampiro.png', vampiroenemy, 80,'vampiro']
+
+
+function começarfaseteste(){
+enemyslot2 = 6;
+enemyslot4 = 6;
+enemyslot6 = 6;
+vidaplayer1 = slot1[3]
+vidaplayer3 = slot3[3]
+vidaplayer5 = slot5[3]
+
+vidaplayer2 = slot2[3]
+vidaplayer4 = slot4[3]
+vidaplayer6 = slot6[3]
+document.getElementById("setafase1cima").style.visibility='hidden';
+  document.getElementById("setafase1frente").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase1").style.visibility='hidden';
+  document.getElementById("botaocomeçarfase1a").style.visibility='hidden';
+return começar();
+
+};
+
+function adminmostrar(){
+
+  document.getElementById("killall").style.visibility='visible';
+    document.getElementById("addall").style.visibility='visible';
+    document.getElementById("começarfaseteste").style.visibility='visible';
+    document.getElementById("adminocultar").style.visibility='visible';
+    document.getElementById("adminmostrar").style.visibility='hidden';
+    
+};
+function adminocultar(){
+  document.getElementById("killall").style.visibility='hidden';
+    document.getElementById("addall").style.visibility='hidden';
+    document.getElementById("começarfaseteste").style.visibility='hidden';
+    document.getElementById("adminocultar").style.visibility='hidden';
+    document.getElementById("adminmostrar").style.visibility='visible';
+    
+  
+ 
+};
+
+
+
+let vidatemp1 = 0;
+let vidatemp2 = 0;
+let vidatemp3 = 0;
+let vidatemp4 = 0;
+let vidatemp5 = 0;
+let vidatemp6 = 0;
+
+
+
+enemyslot2 = 5//Math.floor( 1 + 3*Math.random() );
+enemyslot4 = 6//Math.floor( 1 + 3*Math.random() );
+enemyslot6 = 3//Math.floor( 1 + 3*Math.random() );
+
+let dadoroll = [
+'assets/dice.png', //0
+'assets/dice.png', //1
+'assets/dice.png', //2
+'assets/dice.png', //3
+'assets/dice.png', //4
+'assets/dice.png', //5
+'assets/dice.png', //6
+'assets/dice.png', //7
+'assets/dice.png', //8
+'assets/dice.png'];//9
+
+
+
+
+
+let contadordano = document.getElementById('contadordano'); 
+let quantodano = 0;
+
+let fase = 0;
+
+let atordoamento = 0;
+
+var halfdamage = 10;
+
+let atordoadoplayer1 = 0;
+let atordoadoplayer2 = 0;
+let atordoadoplayer3 = 0;
+let atordoadoplayer4 = 0;
+let atordoadoplayer5 = 0;
+let atordoadoplayer6 = 0;
+
+let furiabarbaro1 = 0;
+let furiabarbaro2 = 0;
+let furiabarbaro3 = 0;
+let furiabarbaro4 = 0;
+let furiabarbaro5 = 0;
+let furiabarbaro6 = 0;
+
+
+let slot1 = [0,''];
+let slot2 = [0,''];
+let slot3 = [0,''];
+let slot4 = [0,''];
+let slot5 = [0,''];
+let slot6 = [0,''];
+  
+  var vidaplayer1;
+  var vidaplayer3;
+  var vidaplayer5;
+  
+  var vidaplayer2;
+  var vidaplayer4;
+  var vidaplayer6;
+
+  let sangramento1 =0;
+  let sangramento2 =0;
+  let sangramento3 =0;
+  let sangramento4 =0;
+  let sangramento5 =0;
+  let sangramento6 =0;
+
+  let danodesangramento;
+
+  var sangramento1show = document.getElementById('sangramento1'); 
+  var sangramento2show = document.getElementById('sangramento2'); 
+  var sangramento3show = document.getElementById('sangramento3'); 
+  var sangramento4show = document.getElementById('sangramento4'); 
+  var sangramento5show = document.getElementById('sangramento5'); 
+  var sangramento6show = document.getElementById('sangramento6'); 
+
+  var vidaplayer1show = document.getElementById('vidaplayer1show'); 
+ 
+  var vidaplayer2show = document.getElementById('vidaplayer2show'); 
+  
+  var vidaplayer3show = document.getElementById('vidaplayer3show'); 
+  
+  var vidaplayer4show = document.getElementById('vidaplayer4show'); 
+
+  var vidaplayer5show = document.getElementById('vidaplayer5show'); 
+  
+  var vidaplayer6show = document.getElementById('vidaplayer6show'); 
+
+
+  function passarturno(){
+    turno++;
+   setTimeout(function() {
+    return turnos();
+    }, 200)
+  };
+
+  function endturn(){
+
+        document.getElementById("especialguerreiro2").style.visibility='hidden'; 
+        document.getElementById("especialguerreiro4").style.visibility='hidden'; 
+        document.getElementById("especialguerreiro6").style.visibility='hidden'; 
+        document.getElementById("danonoinimigo2").style.visibility='hidden'; 
+        document.getElementById("danonoinimigo4").style.visibility='hidden';
+        document.getElementById("danonoinimigo6").style.visibility='hidden';
+        document.getElementById("especialclerigo2").style.visibility='hidden';
+        document.getElementById("especialclerigo4").style.visibility='hidden';
+        document.getElementById("especialclerigo6").style.visibility='hidden';
+        document.getElementById("especialbarbaro2").style.visibility='hidden'; 
+        document.getElementById("especialbarbaro4").style.visibility='hidden'; 
+        document.getElementById("especialbarbaro6").style.visibility='hidden'; 
+        document.getElementById("especialladino2").style.visibility='hidden'; 
+        document.getElementById("especialladino4").style.visibility='hidden'; 
+        document.getElementById("especialladino6").style.visibility='hidden';
+        document.getElementById("especialbarbaro2").style.visibility='hidden'; 
+        document.getElementById("especialbarbaro4").style.visibility='hidden'; 
+        document.getElementById("especialbarbaro6").style.visibility='hidden'; 
+        document.getElementById("especialmonge2").style.visibility='hidden';
+        document.getElementById("especialmonge4").style.visibility='hidden';
+        document.getElementById("especialmonge6").style.visibility='hidden'; 
+
+        document.getElementById("botaorolarladino").style.visibility='hidden'; 
+        document.getElementById("botaorolarmago").style.visibility='hidden'; 
+        document.getElementById("botaorolarguerreiro").style.visibility='hidden';
+        document.getElementById("botaorolarmonge").style.visibility='hidden'; 
+        document.getElementById("botaorolarbarbaro").style.visibility='hidden'; 
+        document.getElementById("botaorolarclerigo").style.visibility='hidden'; 
+        document.getElementById("botaorolarvampiro").style.visibility='hidden'; 
+
+
+        document.getElementById("auraplayer1").style.visibility='hidden';
+        document.getElementById("auraplayer3").style.visibility='hidden';
+        document.getElementById("auraplayer5").style.visibility='hidden';
+
+        turno++;
+        setTimeout(function() {
+
+            return turnos();
+            }, 900)
+    
+
+  };
+
+  function botaostart(){
+
+    
+    document.getElementById("setafase1cima").className = "container";
+    document.getElementById("setafase2cima").className = "container";
+    document.getElementById("setafase4cima").className = "container";
+    
+    document.getElementById("setastart").style.visibility='visible';
+
+    
+    //document.getElementById("botaocomeçar").style.visibility='visible';
+    //document.getElementById("BackEditarEquipe").style.visibility='visible';
+    ////document.getElementById("miniplayer1").style.visibility='visible';
+    ////document.getElementById("miniplayer3").style.visibility='visible';
+    ////document.getElementById("miniplayer5").style.visibility='visible';
+    document.getElementById("WCharStandFront").style.visibility='visible';
+
+    
+    document.getElementById("cadeado").style.visibility='visible';
+  
+
+    document.getElementById("gifteladetitulo").style.visibility='hidden';
+    document.getElementById("teladetitulo").style.visibility='hidden';
+    document.getElementById("botaostart").style.visibility='hidden';
+    //document.getElementById("EditarEquipe").style.visibility='visible';
+
+    //document.getElementById("botaocomeçar").style.visibility='visible';
+    
+    
+
+  };
+
+
+
+  
+  function EditarEquipe(){
+
+    document.getElementById("botaocomeçarfase1a").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase2a").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase3a").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase4a").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase5a").style.visibility='hidden';
+
+    if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 ){
+      if (fase == 1){
+    document.getElementById("botaocomeçarfase1").style.visibility='visible';
+};
+    
+  };
+
+    
+if (fase == 2){
+    document.getElementById("botaocomeçarfase2").style.visibility='visible';
+};
+if (fase == 3){
+    document.getElementById("botaocomeçarfase3").style.visibility='visible';
+};
+if (fase == 4){
+    document.getElementById("botaocomeçarfase4").style.visibility='visible';
+};
+if (fase == 5){
+    document.getElementById("botaocomeçarfase5").style.visibility='visible';
+};
+
+
+    //document.getElementById("BackEditarEquipe").style.visibility='hidden';
+  //document.getElementById("miniplayer1").style.visibility='hidden';
+  //document.getElementById("miniplayer3").style.visibility='hidden';
+  //document.getElementById("miniplayer5").style.visibility='hidden';
+  document.getElementById("WCharStandFront").style.visibility='hidden';
+
+document.getElementById("worldmap").style.visibility='hidden';
+
+document.getElementById("EditarEquipe").style.visibility='hidden';
+document.getElementById("VoltarEditarEquipe").style.visibility='visible';
+
+
+document.getElementById("backgroundInventory").style.visibility='visible';
+
+
+document.getElementById("divGuerreiro").className = "none";
+document.getElementById("divLadino").className = "none";
+document.getElementById("divMago").className = "none";
+document.getElementById("divMonge").className = desbloqueadomonge;
+document.getElementById("divClerigo").className = desbloqueadoclerigo;
+document.getElementById("divBarbaro").className = desbloqueadobarbaro;
+document.getElementById("divVampiro").className = desbloqueadovampiro;
+
+
+document.getElementById("divRight1").className = "none";
+document.getElementById("divRight2").className = "none";
+document.getElementById("divRight3").className = "none";
+
+
+
+
+
+
+}
+
+function VoltarEditarEquipe(){
+
+if (fase == 1){
+    document.getElementById("botaocomeçarfase1a").style.visibility='visible';
+};
+  if (fase == 2){
+    document.getElementById("botaocomeçarfase2a").style.visibility='visible';
+};
+if (fase == 3){
+    document.getElementById("botaocomeçarfase3a").style.visibility='visible';
+};
+if (fase == 4){
+    document.getElementById("botaocomeçarfase4a").style.visibility='visible';
+};
+if (fase == 5){
+    document.getElementById("botaocomeçarfase5a").style.visibility='visible';
+};
+
+
+
+  document.getElementById("botaocomeçarfase1").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase2").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase3").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase4").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase5").style.visibility='hidden';
+  
+
+  document.getElementById("backgroundInventory").style.visibility='hidden';
+
+
+  document.getElementById("background1").style.visibility='hidden';
+document.getElementById("VoltarEditarEquipe").style.visibility='hidden';
+document.getElementById("selectplayer1").style.visibility='hidden';
+document.getElementById("Selectchar1").style.visibility='hidden';
+document.getElementById("selectplayer3").style.visibility='hidden';
+document.getElementById("Selectchar3").style.visibility='hidden';
+document.getElementById("selectplayer5").style.visibility='hidden';
+document.getElementById("Selectchar5").style.visibility='hidden';
+document.getElementById("player1").style.visibility='hidden';
+document.getElementById("player3").style.visibility='hidden';
+document.getElementById("player5").style.visibility='hidden';
+document.getElementById("divGuerreiro").className = "container";
+document.getElementById("divLadino").className = "container";
+document.getElementById("divMago").className = "container";
+document.getElementById("divMonge").className = "container";
+document.getElementById("divClerigo").className = "container";
+document.getElementById("divBarbaro").className = "container";
+document.getElementById("divVampiro").className = "container";
+
+document.getElementById("divRight1").className = "container";
+document.getElementById("divRight2").className = "container";
+document.getElementById("divRight3").className = "container";
+
+
+  
+
+//document.getElementById("BackEditarEquipe").style.visibility='visible';
+  //document.getElementById("miniplayer1").style.visibility='visible';
+  //document.getElementById("miniplayer3").style.visibility='visible';
+  //document.getElementById("miniplayer5").style.visibility='visible';
+  document.getElementById("WCharStandFront").style.visibility='visible';
+
+
+   
+
+document.getElementById("worldmap").style.visibility='visible';
+
+
+//document.getElementById("EditarEquipe").style.visibility='visible';
+document.getElementById("VoltarEditarEquipe").style.visibility='hidden';
+
+
+
+
+}
+
+
+function começar(){
+
+  
+  document.getElementById("botaocomeçarfase1").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase2").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase3").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase4").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase5").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase1a").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase2a").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase3a").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase4a").style.visibility='hidden';
+    document.getElementById("botaocomeçarfase5a").style.visibility='hidden';
+  
+
+  document.getElementById("backgroundInventory").style.visibility='hidden';
+
+
+  document.getElementById("background1").style.visibility='hidden';
+document.getElementById("VoltarEditarEquipe").style.visibility='hidden';
+document.getElementById("selectplayer1").style.visibility='hidden';
+document.getElementById("Selectchar1").style.visibility='hidden';
+document.getElementById("selectplayer3").style.visibility='hidden';
+document.getElementById("Selectchar3").style.visibility='hidden';
+document.getElementById("selectplayer5").style.visibility='hidden';
+document.getElementById("Selectchar5").style.visibility='hidden';
+document.getElementById("player1").style.visibility='hidden';
+document.getElementById("player3").style.visibility='hidden';
+document.getElementById("player5").style.visibility='hidden';
+document.getElementById("divGuerreiro").className = "container";
+document.getElementById("divLadino").className = "container";
+document.getElementById("divMago").className = "container";
+document.getElementById("divMonge").className = "container";
+document.getElementById("divClerigo").className = "container";
+document.getElementById("divBarbaro").className = "container";
+document.getElementById("divVampiro").className = "container";
+
+document.getElementById("divRight1").className = "container";
+document.getElementById("divRight2").className = "container";
+document.getElementById("divRight3").className = "container";
+
+  document.getElementById("contadordano").style.visibility='visible';
+  contadordano = document.getElementById('contadordano'); 
+  contadordano.innerHTML = quantodano;
+
+//invisivel
+
+
+//document.getElementById("BackEditarEquipe").style.visibility='hidden';
+  //document.getElementById("miniplayer1").style.visibility='hidden';
+  //document.getElementById("miniplayer3").style.visibility='hidden';
+  //document.getElementById("miniplayer5").style.visibility='hidden';
+  document.getElementById("WCharStandFront").style.visibility='hidden';
+
+
+document.getElementById("EditarEquipe").style.visibility='hidden';
+document.getElementById("VoltarEditarEquipe").style.visibility='hidden';
+
+document.getElementById("selectplayer1").style.visibility='hidden';
+document.getElementById("Selectchar1").style.visibility='hidden';
+document.getElementById("selectplayer3").style.visibility='hidden';
+document.getElementById("Selectchar3").style.visibility='hidden';
+document.getElementById("selectplayer5").style.visibility='hidden';
+document.getElementById("Selectchar5").style.visibility='hidden';
+document.getElementById("botaocomeçar").style.visibility='hidden';
+document.getElementById("auraplayer1").style.visibility='hidden';
+document.getElementById("auraplayer2").style.visibility='hidden';
+document.getElementById("auraplayer3").style.visibility='hidden';
+document.getElementById("auraplayer4").style.visibility='hidden';
+document.getElementById("auraplayer5").style.visibility='hidden';
+document.getElementById("auraplayer6").style.visibility='hidden';
+document.getElementById("cadeado").style.visibility='hidden';
+
+//mudar
+document.getElementById("camp1").style.visibility='hidden';
+document.getElementById("background1").style.visibility='visible';
+document.getElementById("base").style.visibility='visible';
+background1.setAttribute('src', 'assets/background2.png');
+
+
+//visivel
+
+//document.getElementById('base').style.visibility='visible';
+document.getElementById('dice1').style.visibility='visible';
+document.getElementById('dice2').style.visibility='visible';
+document.getElementById('dice3').style.visibility='visible';
+document.getElementById('dice4').style.visibility='visible';
+document.getElementById('dice5').style.visibility='visible';
+document.getElementById('dice6').style.visibility='visible';
+document.getElementById('dice7').style.visibility='visible';
+document.getElementById('dice8').style.visibility='visible';
+document.getElementById('dice9').style.visibility='visible';
+document.getElementById('dice10').style.visibility='visible';
+
+document.getElementById("player1").style.visibility='visible';
+document.getElementById("player3").style.visibility='visible';
+document.getElementById("player5").style.visibility='visible';
+
+document.getElementById('player2').style.visibility='visible';
+document.getElementById('player4').style.visibility='visible';  //inimigos
+document.getElementById('player6').style.visibility='visible';
+
+document.getElementById('vidaplayer1show').style.visibility='visible';
+document.getElementById('vidaplayer2show').style.visibility='visible';
+document.getElementById('vidaplayer3show').style.visibility='visible';
+document.getElementById('vidaplayer4show').style.visibility='visible';
+document.getElementById('vidaplayer5show').style.visibility='visible';
+document.getElementById('vidaplayer6show').style.visibility='visible';
+
+
+
+
+
+
+//adicionar inimigo
+
+if (enemyslot2 == 1){
+  slot2 =[... guerreiro];
+  player2.setAttribute('src', slot2[1]);
+  vidaplayer2 = slot2[0];
+} //guerreiro
+  
+if (enemyslot2 == 2){
+  slot2 =[... ladino];
+  player2.setAttribute('src', slot2[1]);
+  vidaplayer2 = slot2[0];
+} //ladino
+  
+if (enemyslot2 == 3){
+  slot2 =[... mago];
+  player2.setAttribute('src', slot2[1]);
+ vidaplayer2 = slot2[0];
+} //mago
+
+if (enemyslot2 == 4){
+  slot2 =[... monge];
+  player2.setAttribute('src', slot2[1]);
+ vidaplayer2 = slot2[0];
+} //monge
+
+if (enemyslot2 == 5){
+  slot2 =[... clerigo];
+  player2.setAttribute('src', slot2[1]);
+ vidaplayer2 = slot2[0];
+} //clerigo
+
+if (enemyslot2 == 6){
+  slot2 =[... barbaro];
+  player2.setAttribute('src', slot2[1]);
+ vidaplayer2 = slot2[0];
+} //barbaro
+
+if (enemyslot2 == 7){
+  slot2 =[... vampiro];
+  player2.setAttribute('src', slot2[1]);
+ vidaplayer2 = slot2[0];
+} //barbaro
+
+//---------------------------
+  if (enemyslot4 == 1){
+  slot4 =[... guerreiro];
+  player4.setAttribute('src', slot4[1]);
+  vidaplayer4 = slot4[0];
+} //guerreiro
+if (enemyslot4 == 2){
+  slot4 =[... ladino];
+  player4.setAttribute('src', slot4[1]);
+  vidaplayer4 = slot4[0];
+} //ladino
+if (enemyslot4 == 3){
+  slot4 =[... mago];
+  player4.setAttribute('src', slot4[1]);
+  vidaplayer4 = slot4[0];
+} //mago
+if (enemyslot4 == 4){
+  slot4 =[... monge];
+  player4.setAttribute('src', slot4[1]);
+  vidaplayer4 = slot4[0];
+} //monge
+if (enemyslot4 == 5){
+  slot4 =[... clerigo];
+  player4.setAttribute('src', slot4[1]);
+  vidaplayer4 = slot4[0];
+} //clerigo
+if (enemyslot4 == 6){
+  slot4 =[... barbaro];
+  player4.setAttribute('src', slot4[1]);
+  vidaplayer4 = slot4[0];
+} //barbaro
+if (enemyslot4 == 7){
+  slot4 =[... vampiro];
+  player4.setAttribute('src', slot4[1]);
+  vidaplayer4 = slot4[0];
+} //vampiro
+
+//-----------------------------
+  if (enemyslot6 == 1){
+  slot6 =[... guerreiro];
+  player6.setAttribute('src', slot6[1]);
+  vidaplayer6 = slot6[0];
+} //guerreiro
+if (enemyslot6 == 2){
+  slot6 =[... ladino];
+  player6.setAttribute('src', slot6[1]);
+  vidaplayer6 = slot6[0];
+} //ladino
+if (enemyslot6 == 3){
+  slot6 =[... mago];
+  player6.setAttribute('src', slot6[1]);
+  vidaplayer6 = slot6[0];
+} //mago
+
+if (enemyslot6 == 4){
+  slot6 =[... monge];
+  player6.setAttribute('src', slot6[1]);
+  vidaplayer6 = slot6[0];
+} //monge
+
+if (enemyslot6 == 5){
+  slot6 =[... clerigo];
+  player6.setAttribute('src', slot6[1]);
+  vidaplayer6 = slot6[0];
+} //clerigo
+
+if (enemyslot6 == 6){
+  slot6 =[... barbaro];
+  player6.setAttribute('src', slot6[1]);
+  vidaplayer6 = slot6[0];
+} //barbaro
+
+
+if (enemyslot6 == 7){
+  slot6 =[... vampiro];
+  player6.setAttribute('src', slot6[1]);
+  vidaplayer6 = slot6[0];
+} //barbaro
+
+  vidaplayer1show.innerHTML = vidaplayer1
+  vidaplayer2show.innerHTML = vidaplayer2
+  vidaplayer3show.innerHTML = vidaplayer3
+  vidaplayer4show.innerHTML = vidaplayer4
+  vidaplayer5show.innerHTML = vidaplayer5
+  vidaplayer6show.innerHTML = vidaplayer6
+
+
+turno = 1;
+return turnos();
+
+}
+
+
+
+
+
+window.setInterval(function() {
+    var elem = document.getElementById('demo');
+    elem.scrollTop = elem.scrollHeight;
+  }, 500);
+ 
+
+      
+      
+  
+   
+   var danoacumulado = 0 
+  var text = "";
+   var soma = 0
+  var danoenemy = 0;
+      var dadoenemy = 0;
+  var selectok1 = 0;
+  var selectok2 = 0;
+  var selectok3 = 0;
+  
+  var turno = 0;
+  
+  
+  document.getElementById("botaocomeçar").disabled = true;
+
+  
+  
+</script>
+</html>
