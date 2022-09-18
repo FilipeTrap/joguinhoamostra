@@ -1,0 +1,4 @@
+function começarfase1(){
+
+    
+};
