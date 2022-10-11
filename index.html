@@ -7,7 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="js/turnos.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/fases.js"></script>
+    <script src="js/selectplayer.js"></script>
+    <script src="js/selectplayermobile.js"></script>
+    <script src="js/caracters.js"></script>
     
   
 </head>
@@ -40,6 +45,9 @@
     <img src="https://i.imgur.com/z0Cj8Z5.gif" alt="espbarbaro6gif" id="espbarbaro6gif" style="visibility:hidden"/>
 
   -->
+
+
+
 
     <img src="assets/tumba.png" width="200" height="300" alt="tumbaplayer1" id="tumbaplayer1" style="visibility:hidden"/>
      <img src="assets/tumba.png" width="200" height="300" alt="tumbaplayer2" id="tumbaplayer2" style="visibility:hidden"/>
@@ -227,8 +235,7 @@
   
  
     </div>
-    
-    
+   
     <button id="selectplayer1" onclick="selectplayer1()" style="visibility:hidden">Select</button>
     <select id="Selectchar1" style="visibility:hidden"></select>
     
@@ -237,6 +244,7 @@
     
     <button id="selectplayer5" onclick="selectplayer5()" style="visibility:hidden">Select</button>
     <select id="Selectchar5" style="visibility:hidden">    </select>
+   
     
     <button id="botaocomeçar" onclick="começar()" style="visibility:hidden">COMEÇAR</button>
    
@@ -258,7 +266,13 @@
 
 <!--
   world map
+
+
+
 -->
+
+
+
 
 <img src="assets/caracter.png" id="WCharStandFront"style="visibility:hidden"/> 
 
@@ -266,6 +280,9 @@
 
 <img src="assets/backgroundInventory.png" id="backgroundInventory" style="visibility:hidden"/>
 
+<img src="assets/okdragdrop.png" width="200" height="300" alt="showcaractermobile1" id="showcaractermobile1" style="visibility:hidden"/>
+<img src="assets/okdragdrop.png" width="200" height="300" alt="showcaractermobile3" id="showcaractermobile3" style="visibility:hidden"/>
+<img src="assets/okdragdrop.png" width="200" height="300" alt="showcaractermobile5" id="showcaractermobile5" style="visibility:hidden"/>
 
   <div id="divGuerreiro" class="container">
     <img src="assets/guerreiro.png" alt="guerreiro" id="drag1"  draggable="true" ondragstart="drag(event)"  width="146" height="166">
@@ -335,12 +352,74 @@
 <button id="botaocomeçarfase5a" onclick="EditarEquipe()" style="visibility:hidden">FASE 5</button>
 
 
+<button id="selectplayermobile1" onclick="selectplayermobile1()"  style="visibility:hidden">Select</button>
+<select id="Selectcharmobile1"  style="visibility:hidden"></select>
+
+<button id="selectplayermobile3" onclick="selectplayermobile3()"  style="visibility:hidden">Select</button>
+<select id="Selectcharmobile3"  style="visibility:hidden">    </select>
+
+<button id="selectplayermobile5" onclick="selectplayermobile5()"  style="visibility:hidden">Select</button>
+<select id="Selectcharmobile5"  style="visibility:hidden">    </select>
+
+
 
 </body>
 
-<script> // ======================SCRIPT==========================
+<script> // ======================SCRIPT========================== 
 
 
+
+var objcharmobile1 =  [
+    {name:'-------',id:0},
+    {name:'Guerreiro',id:1},
+    {name:'Ladino',id:2},
+    {name:'Mago',id:3}
+    ]
+    
+    
+    objcharmobile1.forEach(function(item){
+    var option = document.createElement('option');
+    option.value = item.id;
+    option.innerHTML = item.name;
+    Selectcharmobile1.appendChild(option)
+    })
+    
+    
+    //-------------
+    
+    var objcharmobile3 =  [
+    {name:'-------',id:0},
+    {name:'Guerreiro',id:1},
+    {name:'Ladino',id:2},
+    {name:'Mago',id:3}
+    ]
+    
+    
+    objcharmobile3.forEach(function(item){
+    var option = document.createElement('option');
+    option.value = item.id;
+    option.innerHTML = item.name;
+    Selectcharmobile3.appendChild(option)
+    })
+    
+    
+    //-------------
+    
+    var objcharmobile5 =  [
+    {name:'-------',id:0},
+    {name:'Guerreiro',id:1},
+    {name:'Ladino',id:2},
+    {name:'Mago',id:3}
+    ]
+    
+    
+    objcharmobile5.forEach(function(item){
+    var option = document.createElement('option');
+    option.value = item.id;
+    option.innerHTML = item.name;
+    Selectcharmobile5.appendChild(option)
+    })
+    
 
 let escudoplayer1 = 0;
 let escudoplayer2 = 0;
@@ -615,6 +694,10 @@ furiabarbaro6 = 0;
     if (fase == 1){
        // addmonge();
        desbloqueadomonge = "none"
+       if (desbloqueadomongemobile == 0){
+    desbloqueadomongemobile = 1
+    addmongemobile();
+  }
        document.getElementById("setafase1cima").className = "none";
        document.getElementById("setafase1cima").style.visibility='visible';
        if (desbloqueadobarbaro == "none"){
@@ -626,6 +709,12 @@ furiabarbaro6 = 0;
         //addclerigo();
         document.getElementById("setafase2cima").className = "none";
         desbloqueadoclerigo = "none"
+
+        if (desbloqueadoclerigomobile == 0){
+    desbloqueadoclerigomobile = 1
+    addclerigomobile();
+  }
+
         document.getElementById("setafase2cima").style.visibility='visible';
 document.getElementById("setafase2baixo").style.visibility='visible';
       }
@@ -633,6 +722,12 @@ document.getElementById("setafase2baixo").style.visibility='visible';
         //addbarbaro1();
         document.getElementById("setafase3baixo").style.visibility='visible';
         desbloqueadobarbaro = "none"
+
+        if (desbloqueadobarbaromobile == 0){
+    desbloqueadobarbaromobile = 1
+    addbarbaromobile();
+  }
+
         document.getElementById("cadeado").className = "container";
        
 
@@ -647,6 +742,12 @@ document.getElementById("setafase2baixo").style.visibility='visible';
         //addbarbaro1();
         document.getElementById("setafase5baixo").style.visibility='visible';
         desbloqueadovampiro = "none"
+
+        if (desbloqueadovampiromobile == 0){
+    desbloqueadovampiromobile = 1
+    addvampiromobile();
+  }
+
       }
 
     setTimeout(function() {
@@ -665,7 +766,7 @@ document.getElementById('youwingif').style.visibility='hidden';
 function youlose(){
   
   document.getElementById('youlosegif').style.visibility='visible';
-	
+
   document.getElementById("worldmap").style.visibility='visible';
   
   
@@ -782,42 +883,6 @@ furiabarbaro5 = 0;
 furiabarbaro6 = 0;
 
 
-    if (fase == 1){
-       // addmonge();
-       
-       document.getElementById("setafase1cima").className = "none";
-       document.getElementById("setafase1cima").style.visibility='visible';
-       if (desbloqueadobarbaro == "none"){
-        document.getElementById("setafase1frente").style.visibility='visible';
-       }
-
-      }
-      if (fase == 2){
-        //addclerigo();
-        document.getElementById("setafase2cima").className = "none";
-       
-        document.getElementById("setafase2cima").style.visibility='visible';
-document.getElementById("setafase2baixo").style.visibility='visible';
-      }
-      if (fase == 3){
-        //addbarbaro1();
-        document.getElementById("setafase3baixo").style.visibility='visible';
-      
-    
-       
-
-      }
-      if (fase == 4){
-        //addbarbaro1();
-        document.getElementById("setafase4cima").className = "none";
-        document.getElementById("setafase4cima").style.visibility='visible';
-        document.getElementById("setafase4baixo").style.visibility='visible';
-      }
-      if (fase == 5){
-        //addbarbaro1();
-        document.getElementById("setafase5baixo").style.visibility='visible';
-      
-      }
 
  
 
@@ -831,7 +896,6 @@ document.getElementById("auraplayer5").style.visibility='hidden';
 document.getElementById("auraplayer6").style.visibility='hidden';
 document.getElementById('youlosegif').style.visibility='hidden';
         }, 2000)
-
 };
 
 
@@ -1085,11 +1149,108 @@ vidaplayer6 = 1;
                 vidaplayer6show.innerHTML = vidaplayer6
 };
 
+let desbloqueadomongemobile = 0;
+let desbloqueadoclerigomobile = 0;
+let desbloqueadobarbaromobile = 0;
+let desbloqueadovampiromobile = 0;
+// monge clerigo barbaro e vampiro
+
+function addmongemobile(){
+
+    var opt1 = document.createElement("option");        
+    opt1.text = "Monge";
+    opt1.value = 4;
+    document.getElementById('Selectcharmobile1').options.add(opt1);
+
+    var opt2 = document.createElement("option");        
+    opt2.text = "Monge";
+    opt2.value = 4;
+    document.getElementById('Selectcharmobile3').options.add(opt2);
+
+    var opt3 = document.createElement("option");        
+    opt3.text = "Monge";
+    opt3.value = 4;
+    document.getElementById('Selectcharmobile5').options.add(opt3);
+
+};
+function addclerigomobile(){
+
+var opt1 = document.createElement("option");        
+opt1.text = "Clerigo";
+opt1.value = 5;
+document.getElementById('Selectcharmobile1').options.add(opt1);
+
+var opt2 = document.createElement("option");        
+opt2.text = "Clerigo";
+opt2.value = 5;
+document.getElementById('Selectcharmobile3').options.add(opt2);
+
+var opt3 = document.createElement("option");        
+opt3.text = "Clerigo";
+opt3.value = 5;
+document.getElementById('Selectcharmobile5').options.add(opt3);
+
+};
+function addbarbaromobile(){
+
+var opt1 = document.createElement("option");        
+opt1.text = "Barbaro";
+opt1.value = 6;
+document.getElementById('Selectcharmobile1').options.add(opt1);
+
+var opt2 = document.createElement("option");        
+opt2.text = "Barbaro";
+opt2.value = 6;
+document.getElementById('Selectcharmobile3').options.add(opt2);
+
+var opt3 = document.createElement("option");        
+opt3.text = "Barbaro";
+opt3.value = 6;
+document.getElementById('Selectcharmobile5').options.add(opt3);
+
+};
+function addvampiromobile(){
+
+var opt1 = document.createElement("option");        
+opt1.text = "Vampiro";
+opt1.value = 7;
+document.getElementById('Selectcharmobile1').options.add(opt1);
+
+var opt2 = document.createElement("option");        
+opt2.text = "Vampiro";
+opt2.value = 7;
+document.getElementById('Selectcharmobile3').options.add(opt2);
+
+var opt3 = document.createElement("option");        
+opt3.text = "Vampiro";
+opt3.value = 7;
+document.getElementById('Selectcharmobile5').options.add(opt3);
+
+};
+
+
+
 function addall(){
+
+
+  divRight1.setAttribute('src', 'assets/vampiro.png');
+
+
 desbloqueadomonge = "none";
 desbloqueadoclerigo = "none";
 desbloqueadobarbaro = "none";
 desbloqueadovampiro = "none";
+
+addmongemobile();
+addclerigomobile();
+addbarbaromobile();
+addvampiromobile();
+// if (desbloqueadomongemobile == 0){
+//     desbloqueadomongemobile = 1
+//     addmongemobile();
+//   }
+
+
 /*
 escudoplayer1 = 10
 escudoplayer3 = 10
@@ -1358,7 +1519,34 @@ let slot6 = [0,''];
   
   function EditarEquipe(){
 
-    document.getElementById("botaocomeçarfase1a").style.visibility='hidden';
+
+
+    if( navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)
+ ){
+
+document.getElementById("selectplayermobile1").style.visibility='visible';
+document.getElementById("Selectcharmobile1").style.visibility='visible';
+document.getElementById("selectplayermobile3").style.visibility='visible';
+document.getElementById("Selectcharmobile3").style.visibility='visible';
+document.getElementById("selectplayermobile5").style.visibility='visible';
+document.getElementById("Selectcharmobile5").style.visibility='visible';
+
+
+  document.getElementById("showcaractermobile1").style.visibility='visible';
+  document.getElementById("showcaractermobile3").style.visibility='visible';
+  document.getElementById("showcaractermobile5").style.visibility='visible';
+    //alert("ta no mobile");
+  }
+
+  
+
+  document.getElementById("botaocomeçarfase1a").style.visibility='hidden';
     document.getElementById("botaocomeçarfase2a").style.visibility='hidden';
     document.getElementById("botaocomeçarfase3a").style.visibility='hidden';
     document.getElementById("botaocomeçarfase4a").style.visibility='hidden';
@@ -1415,13 +1603,29 @@ document.getElementById("divRight2").className = "none";
 document.getElementById("divRight3").className = "none";
 
 
-
-
-
-
 }
 
+
+
+
+
+
+
+
 function VoltarEditarEquipe(){
+
+
+  //mobile
+  document.getElementById("selectplayermobile1").style.visibility='hidden';
+document.getElementById("Selectcharmobile1").style.visibility='hidden';
+document.getElementById("selectplayermobile3").style.visibility='hidden';
+document.getElementById("Selectcharmobile3").style.visibility='hidden';
+document.getElementById("selectplayermobile5").style.visibility='hidden';
+document.getElementById("Selectcharmobile5").style.visibility='hidden';
+
+  document.getElementById("showcaractermobile1").style.visibility='hidden';
+  document.getElementById("showcaractermobile3").style.visibility='hidden';
+  document.getElementById("showcaractermobile5").style.visibility='hidden';
 
 if (fase == 1){
     document.getElementById("botaocomeçarfase1a").style.visibility='visible';
@@ -1438,6 +1642,8 @@ if (fase == 4){
 if (fase == 5){
     document.getElementById("botaocomeçarfase5a").style.visibility='visible';
 };
+
+
 
 
 
@@ -1499,6 +1705,19 @@ document.getElementById("VoltarEditarEquipe").style.visibility='hidden';
 
 
 function começar(){
+
+  //mobile
+
+  document.getElementById("selectplayermobile1").style.visibility='hidden';
+document.getElementById("Selectcharmobile1").style.visibility='hidden';
+document.getElementById("selectplayermobile3").style.visibility='hidden';
+document.getElementById("Selectcharmobile3").style.visibility='hidden';
+document.getElementById("selectplayermobile5").style.visibility='hidden';
+document.getElementById("Selectcharmobile5").style.visibility='hidden';
+
+  document.getElementById("showcaractermobile1").style.visibility='hidden';
+  document.getElementById("showcaractermobile3").style.visibility='hidden';
+  document.getElementById("showcaractermobile5").style.visibility='hidden';
 
   
   document.getElementById("botaocomeçarfase1").style.visibility='hidden';
@@ -6239,7 +6458,6 @@ document.getElementById("auraplayer6").style.visibility='hidden';
     }
     
 
-
 /*
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ─██████──██████─██████████████─██████──────────██████─██████████████─██████████─████████████████───██████████████─
@@ -9490,6 +9708,358 @@ function vampiroslot5 () {
   vidaplayer5 = slot5[0]
 }
 
+    function selectplayermobile1() {
+      
+      var menu = document.getElementById("Selectcharmobile1");
+    
+              if (menu.value == '0') {
+                  text += "POR FAVOR ESCOLHA UM PERSONAGEM" + '\n';
+                  
+              }
+              if (menu.value == '1') {
+                //document.getElementById("selectplayermobile1").disabled = true;
+                text += "o personagem escolhido foi Guerreiro no slot 1" + '\n';
+                document.getElementById("demo").innerHTML = text;
+                slot1 =[... guerreiro];
+                showcaractermobile1.setAttribute('src', 'assets/guerreiro.png');
+                //showcaractermobile1
+
+                  selectok1 = 1;
+                  
+                  if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+      
+        };
+       
+        
+    
+                    guerreiroslot1();
+              }
+              if (menu.value == '2') {
+                //document.getElementById("selectplayermobile1").disabled = true;
+                text += "o personagem escolhido foi LADINO no slot 1" + '\n';
+                document.getElementById("demo").innerHTML = text;
+    
+
+                  slot1 =[... ladino];
+                  showcaractermobile1.setAttribute('src', 'assets/ladino.png');
+                  selectok1 = 1;
+                  
+                  if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+                    document.getElementById("botaocomeçarfase1").style.visibility='visible';
+        
+    };
+                    ladinoslot1();
+              }
+              if (menu.value == '3') {
+                //document.getElementById("selectplayermobile1").disabled = true;
+                text += "o personagem escolhido foi MAGO no slot 1" + '\n';
+                document.getElementById("demo").innerHTML = text;
+                  slot1 =[... mago];
+                  showcaractermobile1.setAttribute('src', 'assets/mago.png');
+                 selectok1 = 1;
+                 
+                 if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+    };
+                   magoslot1();
+              }
+         
+    
+              if (menu.value == '4') {
+                text += "o personagem escolhido foi MONGE no slot 1" + '\n';
+                //document.getElementById("selectplayermobile1").disabled = true;
+                document.getElementById("demo").innerHTML = text;
+    
+                  slot1 =[... monge];
+                  showcaractermobile1.setAttribute('src', 'assets/monge.png');
+                 selectok1 = 1;
+                 
+                 if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+    };
+                   mongeslot1();
+              }
+    
+    
+              if (menu.value == '5') {
+                 
+                  //document.getElementById("selectplayermobile1").disabled = true;
+              text += "o personagem escolhido foi CLERIGO no slot 1" + '\n';
+              document.getElementById("demo").innerHTML = text;
+                 selectok1 = 1;
+                 slot1 =[... clerigo];
+                 showcaractermobile1.setAttribute('src', 'assets/clerigo.png');
+                 if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+    };
+                   clerigoslot1();
+              }
+    
+    
+              if (menu.value == '6') {
+                text += "o personagem escolhido foi barbaro no slot 1" + '\n';
+                //document.getElementById("selectplayermobile1").disabled = true;
+                document.getElementById("demo").innerHTML = text;
+                  slot1 =[... barbaro];
+                  showcaractermobile1.setAttribute('src', 'assets/barbaro.png');
+                 selectok1 = 1;
+                 
+                 if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+    };
+                   barbaroslot1();
+              }
+
+              if (menu.value == '7') {
+                text += "o personagem escolhido foi vampiro no slot 1" + '\n';
+                //document.getElementById("selectplayermobile1").disabled = true;
+                document.getElementById("demo").innerHTML = text;
+                  slot1 =[... vampiro];
+                  showcaractermobile1.setAttribute('src', 'assets/vampiro.png');
+                 selectok1 = 1;
+                 
+                 if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+    };
+                   vampiroslot1();
+              }
+    
+    
+    
+    
+      
+    }
+    
+    function selectplayermobile3() {
+    
+      var menu = document.getElementById("Selectcharmobile3");
+    
+              if (menu.value == '0') {
+                  text += "POR FAVOR ESCOLHA UM PERSONAGEM" + '\n';
+                  
+              }
+              if (menu.value == '1') {
+                  slot3 =[... guerreiro];
+                  showcaractermobile3.setAttribute('src', 'assets/guerreiro.png');
+                  text += "o personagem escolhido foi GUERREIRO no slot 2" + '\n';
+                  selectok2 = 1;
+                  //document.getElementById("selectplayermobile3").disabled = true;
+                  if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+    };
+                    guerreiroslot3();
+              }
+              else if (menu.value == '2') {
+                  slot3 =[... ladino];
+                  showcaractermobile3.setAttribute('src', 'assets/ladino.png');
+                  text += "o personagem escolhido foi LADINO no slot 2" + '\n';
+                  selectok2 = 1;
+                  //document.getElementById("selectplayermobile3").disabled = true;
+                  if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+    };
+                    ladinoslot3();
+              }
+              else if (menu.value == '3') {
+                  slot3 =[... mago];
+                  showcaractermobile3.setAttribute('src', 'assets/mago.png');
+              text += "o personagem escolhido foi MAGO no slot 2" + '\n';
+              selectok2 = 1;
+              //document.getElementById("selectplayermobile3").disabled = true;
+              if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+    };
+                magoslot3();
+              }
+    
+              else if (menu.value == '4') {
+                  slot3 =[... monge];
+                  showcaractermobile3.setAttribute('src', 'assets/monge.png');
+              text += "o personagem escolhido foi MONGE no slot 3" + '\n';
+              selectok2 = 1;
+              //document.getElementById("selectplayermobile3").disabled = true;
+              if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+    };
+                mongeslot3();
+              }
+    
+    
+              else if (menu.value == '5') {
+                  slot3 =[... clerigo];
+                  showcaractermobile3.setAttribute('src', 'assets/clerigo.png');
+              text += "o personagem escolhido foi CLERIGO no slot 3" + '\n';
+              selectok2 = 1;
+              //document.getElementById("selectplayermobile3").disabled = true;
+              if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+    };
+                clerigoslot3();
+              }
+    
+    
+    
+              else if (menu.value == '6') {
+                  slot3 =[... barbaro];
+                  showcaractermobile3.setAttribute('src', 'assets/barbaro.png');
+              text += "o personagem escolhido foi BARBARO no slot 3" + '\n';
+              selectok2 = 1;
+              //document.getElementById("selectplayermobile3").disabled = true;
+              if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+    };
+                barbaroslot3();
+              }
+
+              else if (menu.value == '7') {
+                slot3 =[... vampiro];
+                showcaractermobile3.setAttribute('src', 'assets/vampiro.png');
+            text += "o personagem escolhido foi VAMPIRO no slot 3" + '\n';
+            selectok2 = 1;
+            //document.getElementById("selectplayermobile3").disabled = true;
+            if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+      document.getElementById("botaocomeçarfase1").style.visibility='visible';
+  };
+              vampiroslot3();
+            }
+    
+          
+      
+    }
+    
+    function selectplayermobile5() {
+    
+      var menu = document.getElementById("Selectcharmobile5");
+    
+              if (menu.value == '0') {
+                  text += "POR FAVOR ESCOLHA UM PERSONAGEM" + '\n';
+                  document.getElementById("demo").innerHTML = text;
+              }
+              if (menu.value == '1') {
+                slot5 =[... guerreiro];
+                showcaractermobile5.setAttribute('src', 'assets/guerreiro.png');
+                   guerreiroslot5();
+                  text += "o personagem escolhido foi GUERREIRO no slot 5" + '\n';
+                  document.getElementById("demo").innerHTML = text;
+                  selectok3 = 1; 
+                  //document.getElementById("selectplayermobile5").disabled = true;
+                         
+                    
+                  if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+                    document.getElementById("botaocomeçarfase1").style.visibility='visible';
+                };
+      
+                 }
+              else if (menu.value == '2') {
+                slot5 =[... ladino];
+                showcaractermobile5.setAttribute('src', 'assets/ladino.png');
+                  ladinoslot5();
+                  text += "o personagem escolhido foi LADINO no slot 5" + '\n';
+                  document.getElementById("demo").innerHTML = text;
+                  
+                  //document.getElementById("selectplayermobile5").disabled = true;
+                  selectok3 = 1;
+        
+      if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+    };
+      
+                    
+              }
+              else if (menu.value == '3') {
+                slot5 =[... mago];
+                showcaractermobile5.setAttribute('src', 'assets/mago.png');
+                  magoslot5();
+              text += "o personagem escolhido foi MAGO no slot 5" + '\n';
+              document.getElementById("demo").innerHTML = text;
+                 //document.getElementById("selectplayermobile5").disabled = true;
+                 selectok3 = 1;
+     
+     if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+        document.getElementById("botaocomeçarfase1").style.visibility='visible';
+    };
+      
+                   
+              }
+         
+    
+              else if (menu.value == '4') {
+                selectok3 = 1;
+                slot5 =[... monge];
+                showcaractermobile5.setAttribute('src', 'assets/monge.png');
+                  mongeslot5();
+              text += "o personagem escolhido foi MONGE no slot 5" + '\n';
+              document.getElementById("demo").innerHTML = text;
+                 //document.getElementById("selectplayermobile5").disabled = true;
+                 
+                  
+                  if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+                    document.getElementById("botaocomeçarfase1").style.visibility='visible';
+                };
+      
+                   
+              }
+    
+    
+    
+              else if (menu.value == '5') {
+                slot5 =[... clerigo];
+                showcaractermobile5.setAttribute('src', 'assets/clerigo.png');
+                  clerigoslot5();
+              text += "o personagem escolhido foi CLERIGO no slot 5" + '\n';
+              document.getElementById("demo").innerHTML = text;
+                
+                 //document.getElementById("selectplayermobile5").disabled = true;
+                 selectok3 = 1;
+                  
+                  if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+                    document.getElementById("botaocomeçarfase1").style.visibility='visible';
+                };
+      
+                   
+              }
+    
+    
+    
+              else if (menu.value == '6') {
+                slot5 =[... barbaro];
+                showcaractermobile5.setAttribute('src', 'assets/barbaro.png');
+                  barbaroslot5();
+              text += "o personagem escolhido foi BARBARO no slot 5" + '\n';
+              document.getElementById("demo").innerHTML = text;
+               
+                 //document.getElementById("selectplayermobile5").disabled = true;
+                 selectok3 = 1;
+                   
+                   if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+                    document.getElementById("botaocomeçarfase1").style.visibility='visible';
+                };
+                   
+              }
+              else if (menu.value == '7') {
+                slot5 =[... vampiro];
+                showcaractermobile5.setAttribute('src', 'assets/vampiro.png');
+                  vampiroslot5();
+              text += "o personagem escolhido foi VAMPIRO no slot 5" + '\n';
+              document.getElementById("demo").innerHTML = text;
+               
+                 //document.getElementById("selectplayermobile5").disabled = true;
+                 selectok3 = 1;
+                   
+                   if(selectok1 == 1 && selectok2 == 1 && selectok3 == 1 && fase == 1){
+                    document.getElementById("botaocomeçarfase1").style.visibility='visible';
+                };
+                   
+              }
+    
+          
+      
+    }
+    
+    
+    //============================================ teste pra por tanto no mobile quanto no pc
+	
   
 </script>
 </html>
