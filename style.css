@@ -353,7 +353,7 @@ position: absolute;
 
 #divGuerreiro {
 		left: 54px; /* posiciona a 90px para a esquerda */ 
-		top: -864px; /* posiciona a 70px para baixo */
+		top: -987px; /* posiciona a 70px para baixo */
 position: relative;
   height: 166px;
   width: 146px;
@@ -362,7 +362,7 @@ position: relative;
 
 #divLadino {
 		left: 300px; /* posiciona a 90px para a esquerda */ 
-		top: -1035px; /* posiciona a 70px para baixo */
+		top: -987px; /* posiciona a 70px para baixo */
 position: relative;
   height: 166px;
   width: 146px;
@@ -370,7 +370,7 @@ position: relative;
 }
 #divMago {
 		left: 542px; /* posiciona a 90px para a esquerda */ 
-		top: -1206px; /* posiciona a 70px para baixo */
+		top: -987px; /* posiciona a 70px para baixo */
 position: relative;
   height: 166px;
   width: 146px;
@@ -388,7 +388,7 @@ position: relative;
 
 #divClerigo {
 		left: 299px; /* posiciona a 90px para a esquerda */ 
-		top: -1329px; /* posiciona a 70px para baixo */
+		top: -1155px; /* posiciona a 70px para baixo */
 position: relative;
   height: 166px;
   width: 146px;
@@ -397,7 +397,7 @@ position: relative;
 
 #divBarbaro {
 		left: 542px; /* posiciona a 90px para a esquerda */ 
-		top: -1496px; /* posiciona a 70px para baixo */
+		top: -1155px; /* posiciona a 70px para baixo */
 position: relative;
   height: 166px;
   width: 146px;
@@ -405,7 +405,7 @@ position: relative;
 }
 #divVampiro {
 		left: 57px; /* posiciona a 90px para a esquerda */ 
-		top: -1452px; /* posiciona a 70px para baixo */
+		top: -1571px; /* posiciona a 70px para baixo */
 position: relative;
   height: 166px;
   width: 146px;
