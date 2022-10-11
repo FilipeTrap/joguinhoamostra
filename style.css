@@ -370,7 +370,7 @@ position: relative;
 }
 #divMago {
 		left: 542px; /* posiciona a 90px para a esquerda */ 
-		top: -987px; /* posiciona a 70px para baixo */
+		top: -1325px; /* posiciona a 70px para baixo */
 position: relative;
   height: 166px;
   width: 146px;
@@ -379,7 +379,7 @@ position: relative;
 
 #divMonge {
 		left: 54px; /* posiciona a 90px para a esquerda */ 
-		top: -1155px; /* posiciona a 70px para baixo */
+		top: -1279px; /* posiciona a 70px para baixo */
 position: relative;
   height: 166px;
   width: 146px;
@@ -388,7 +388,7 @@ position: relative;
 
 #divClerigo {
 		left: 299px; /* posiciona a 90px para a esquerda */ 
-		top: -1155px; /* posiciona a 70px para baixo */
+		top: -1445px; /* posiciona a 70px para baixo */
 position: relative;
   height: 166px;
   width: 146px;
@@ -397,7 +397,7 @@ position: relative;
 
 #divBarbaro {
 		left: 542px; /* posiciona a 90px para a esquerda */ 
-		top: -1155px; /* posiciona a 70px para baixo */
+		top: -1613px; /* posiciona a 70px para baixo */
 position: relative;
   height: 166px;
   width: 146px;
