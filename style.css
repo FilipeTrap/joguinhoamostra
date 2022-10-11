@@ -212,7 +212,7 @@ width: 70px; height: 70px; text-align: center; font-size: 50px;
 		
 			width: 220px; height: 220px;
 			}
-
+/* 
 #tutorial {
 	position: absolute; 	
 	left: 773px; /* posiciona a 90px para a esquerda */ 
@@ -223,7 +223,7 @@ width: 70px; height: 70px; text-align: center; font-size: 50px;
         background-position: center; /* imagem fixa no centro */
 		width: 1811px; height: 1280px;
     } 
-
+ */ 
 
 #botaorolarvampiro {
 	position: absolute; 
