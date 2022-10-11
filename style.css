@@ -1647,6 +1647,12 @@ width: 70px; height: 70px; text-align: center; font-size: 50px;
 		width: 140px; height: 130px; text-align: center; font-size: 24px;
 		}
 
+	#botaorolarvampiro {
+		position: absolute; 
+		left: 35px; /* posiciona a 90px para a esquerda */ 
+		top: 1145px; /* posiciona a 70px para baixo */
+		width: 140px; height: 130px; text-align: center; font-size: 24px;
+		}
 
 	
 	#botaorolarclerigo {
