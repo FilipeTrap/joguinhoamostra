@@ -1,4 +1,48 @@
 
+	#circuloespecialplayer1 {
+		position: absolute; 
+		left: 50px; /* posiciona a 90px para a esquerda */ 
+		top: 800px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#circuloespecialplayer2 {
+		position: absolute; 
+		left: 530px; /* posiciona a 90px para a esquerda */ 
+		top: 800px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#circuloespecialplayer3 {
+		position: absolute; 
+		left: 50px; /* posiciona a 90px para a esquerda */ 
+		top: 580px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#circuloespecialplayer4 {
+		position: absolute; 
+		left: 530px; /* posiciona a 90px para a esquerda */ 
+		top: 580px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#circuloespecialplayer5 {
+		position: absolute; 
+		left: 50px; /* posiciona a 90px para a esquerda */ 
+		top: 365px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+	#circuloespecialplayer6 {
+		position: absolute; 
+		left: 530px; /* posiciona a 90px para a esquerda */ 
+		top: 365px; /* posiciona a 50px para baixo */
+	
+		width: 220px; height: 220px;
+		}
+
+
 #showcaractermobile1 {
 	left: 90px; /* posiciona a 90px para a esquerda */ 
 	top: 157px; /* posiciona a 70px para baixo */
