@@ -93,6 +93,13 @@
     <img src="assets/heal.gif" alt="healplayer4" id="healplayer4" style="visibility:hidden"/>
     <img src="assets/heal.gif" alt="healplayer5" id="healplayer5" style="visibility:hidden"/>
     <img src="assets/heal.gif" alt="healplayer6" id="healplayer6" style="visibility:hidden"/>
+	
+    <img src="assets/circuloespecial.gif" alt="circuloespecialplayer1" id="circuloespecialplayer1" style="visibility:hidden"/>
+    <img src="assets/circuloespecial.gif" alt="circuloespecialplayer2" id="circuloespecialplayer2" style="visibility:hidden"/>
+    <img src="assets/circuloespecial.gif" alt="circuloespecialplayer3" id="circuloespecialplayer3" style="visibility:hidden"/>
+    <img src="assets/circuloespecial.gif" alt="circuloespecialplayer4" id="circuloespecialplayer4" style="visibility:hidden"/>
+    <img src="assets/circuloespecial.gif" alt="circuloespecialplayer5" id="circuloespecialplayer5" style="visibility:hidden"/>
+    <img src="assets/circuloespecial.gif" alt="circuloespecialplayer6" id="circuloespecialplayer6" style="visibility:hidden"/>
 
     <img src="assets/escudo.png" alt="escudoplayer1" id="escudoplayer1" style="visibility:hidden" />
     <img src="assets/escudo.png" alt="escudoplayer2" id="escudoplayer2" style="visibility:hidden" />
@@ -2861,13 +2868,38 @@ if (dado == '1') {
       if (dado == 6) {
      
       if (turno == 1 && furiabarbaro1 < 1){
-     document.getElementById("especialbarbaro2").style.visibility='visible'; 
+
+        document.getElementById("botaorolarbarbaro").style.visibility='hidden';
+        document.getElementById("especialbarbaro2").style.visibility='visible'; 
+        document.getElementById("circuloespecialplayer1").style.visibility='visible'; 
+       
+        setTimeout(function() {
+             document.getElementById("circuloespecialplayer1").style.visibility='hidden';
+             document.getElementById("botaorolarbarbaro").style.visibility='visible';
+              }, 500)
+
+
+      
      }
       if (turno == 3 && furiabarbaro3 < 1){
-      document.getElementById("especialbarbaro4").style.visibility='visible';
+        document.getElementById("botaorolarbarbaro").style.visibility='hidden';
+        document.getElementById("especialbarbaro4").style.visibility='visible'; 
+        document.getElementById("circuloespecialplayer3").style.visibility='visible'; 
+       
+        setTimeout(function() {
+             document.getElementById("circuloespecialplayer3").style.visibility='hidden';
+             document.getElementById("botaorolarbarbaro").style.visibility='visible';
+              }, 500)
       }
       if (turno == 5 && furiabarbaro5 < 1){
-      document.getElementById("especialbarbaro6").style.visibility='visible';
+        document.getElementById("botaorolarbarbaro").style.visibility='hidden';
+        document.getElementById("especialbarbaro6").style.visibility='visible'; 
+        document.getElementById("circuloespecialplayer5").style.visibility='visible'; 
+       
+        setTimeout(function() {
+             document.getElementById("circuloespecialplayer5").style.visibility='hidden';
+             document.getElementById("botaorolarbarbaro").style.visibility='visible';
+              }, 500)
       }
 
       }
@@ -3172,16 +3204,40 @@ if (dado == '1') {
 
 //--------------------
 
-    if (dado == 6) {
+ if (dado == 6) {
     // especialclerigo
     if (vidaplayer1 > 0 && vidaplayer1 < slot1[3]){
+   //document.getElementById("especialclerigo2").style.visibility='visible'; 
+
+   document.getElementById("botaorolarclerigo").style.visibility='hidden';
    document.getElementById("especialclerigo2").style.visibility='visible'; 
+   document.getElementById("circuloespecialplayer1").style.visibility='visible'; 
+  
+   setTimeout(function() {
+        document.getElementById("circuloespecialplayer1").style.visibility='hidden';
+        document.getElementById("botaorolarclerigo").style.visibility='visible';
+         }, 500)
+
    }
     if (vidaplayer3 > 0 && vidaplayer3 < slot3[3]){
-    document.getElementById("especialclerigo4").style.visibility='visible';
+      document.getElementById("botaorolarclerigo").style.visibility='hidden';
+   document.getElementById("especialclerigo4").style.visibility='visible'; 
+   document.getElementById("circuloespecialplayer3").style.visibility='visible'; 
+  
+   setTimeout(function() {
+        document.getElementById("circuloespecialplayer3").style.visibility='hidden';
+        document.getElementById("botaorolarclerigo").style.visibility='visible';
+         }, 500)
     }
     if (vidaplayer5 > 0 && vidaplayer5 < slot5[3]){
-    document.getElementById("especialclerigo6").style.visibility='visible';
+      document.getElementById("botaorolarclerigo").style.visibility='hidden';
+   document.getElementById("especialclerigo6").style.visibility='visible'; 
+   document.getElementById("circuloespecialplayer5").style.visibility='visible'; 
+  
+   setTimeout(function() {
+        document.getElementById("circuloespecialplayer5").style.visibility='hidden';
+        document.getElementById("botaorolarclerigo").style.visibility='visible';
+         }, 500)
     }
 
     }
@@ -3565,19 +3621,46 @@ if (dado == '1') {
 
 //--------------------
 
+    
     if (dado == 6) {
     // especialmonge
     if (vidaplayer2 > 0){
-   document.getElementById("especialmonge2").style.visibility='visible'; 
-   document.getElementById("danonoinimigo2").style.visibility='hidden'; 
+
+
+      document.getElementById("danonoinimigo2").style.visibility='hidden';
+      document.getElementById("botaorolarmonge").style.visibility='hidden';
+      document.getElementById("especialmonge2").style.visibility='visible'; 
+      document.getElementById("circuloespecialplayer2").style.visibility='visible'; 
+     
+      setTimeout(function() {
+           document.getElementById("circuloespecialplayer2").style.visibility='hidden';
+           document.getElementById("botaorolarmonge").style.visibility='visible';
+            }, 500)
+
+
+   
    }
     if (vidaplayer4 > 0){
-    document.getElementById("especialmonge4").style.visibility='visible';
-    document.getElementById("danonoinimigo4").style.visibility='hidden'; 
+      document.getElementById("danonoinimigo4").style.visibility='hidden';
+      document.getElementById("botaorolarmonge").style.visibility='hidden';
+      document.getElementById("especialmonge4").style.visibility='visible'; 
+      document.getElementById("circuloespecialplayer4").style.visibility='visible'; 
+     
+      setTimeout(function() {
+           document.getElementById("circuloespecialplayer4").style.visibility='hidden';
+           document.getElementById("botaorolarmonge").style.visibility='visible';
+            }, 500)
     }
     if (vidaplayer6 > 0){
-    document.getElementById("especialmonge6").style.visibility='visible';
-    document.getElementById("danonoinimigo6").style.visibility='hidden'; 
+      document.getElementById("danonoinimigo6").style.visibility='hidden';
+      document.getElementById("botaorolarmonge").style.visibility='hidden';
+      document.getElementById("especialmonge6").style.visibility='visible'; 
+      document.getElementById("circuloespecialplayer6").style.visibility='visible'; 
+     
+      setTimeout(function() {
+           document.getElementById("circuloespecialplayer6").style.visibility='hidden';
+           document.getElementById("botaorolarmonge").style.visibility='visible';
+            }, 500)
     }
 
     }
@@ -4139,13 +4222,34 @@ if (dado == '1') {
 if (dado == 6) {
      
   if (turno == 1 && soma > escudoplayer1){
+    document.getElementById("botaorolarguerreiro").style.visibility='hidden';
  document.getElementById("especialguerreiro2").style.visibility='visible'; 
+ document.getElementById("circuloespecialplayer1").style.visibility='visible'; 
+
+ setTimeout(function() {
+      document.getElementById("circuloespecialplayer1").style.visibility='hidden';
+      document.getElementById("botaorolarguerreiro").style.visibility='visible';
+       }, 500)
  }
   if (turno == 3 && soma > escudoplayer3){
-  document.getElementById("especialguerreiro4").style.visibility='visible';
+    document.getElementById("botaorolarguerreiro").style.visibility='hidden';
+    document.getElementById("especialguerreiro4").style.visibility='visible'; 
+    document.getElementById("circuloespecialplayer1").style.visibility='visible'; 
+   
+    setTimeout(function() {
+         document.getElementById("circuloespecialplayer1").style.visibility='hidden';
+         document.getElementById("botaorolarguerreiro").style.visibility='visible';
+          }, 500)
   }
   if (turno == 5 && soma > escudoplayer5){
-  document.getElementById("especialguerreiro6").style.visibility='visible';
+    document.getElementById("botaorolarguerreiro").style.visibility='hidden';
+    document.getElementById("especialguerreiro6").style.visibility='visible'; 
+    document.getElementById("circuloespecialplayer1").style.visibility='visible'; 
+   
+    setTimeout(function() {
+         document.getElementById("circuloespecialplayer1").style.visibility='hidden';
+         document.getElementById("botaorolarguerreiro").style.visibility='visible';
+          }, 500)
   }
 
   }
@@ -4493,19 +4597,55 @@ if (dado == '1') {
 
 //--------------------
 
-      if (dado == 6) {
+     if (dado == 6) {
       // especialladino
       if (vidaplayer2 > 0){
-     document.getElementById("especialladino2").style.visibility='visible'; 
-     document.getElementById("danonoinimigo2").style.visibility='hidden'; 
+
+        document.getElementById("danonoinimigo2").style.visibility='hidden';
+        document.getElementById("botaorolarladino").style.visibility='hidden';
+        document.getElementById("especialladino2").style.visibility='visible'; 
+        document.getElementById("circuloespecialplayer2").style.visibility='visible'; 
+       
+        setTimeout(function() {
+             document.getElementById("circuloespecialplayer2").style.visibility='hidden';
+             document.getElementById("botaorolarladino").style.visibility='visible';
+              }, 500)
+
+
+      
      }
       if (vidaplayer4 > 0){
-      document.getElementById("especialladino4").style.visibility='visible';
-      document.getElementById("danonoinimigo4").style.visibility='hidden'; 
+      // document.getElementById("especialladino4").style.visibility='visible';
+      // document.getElementById("danonoinimigo4").style.visibility='hidden'; 
+
+      document.getElementById("danonoinimigo4").style.visibility='hidden';
+      document.getElementById("botaorolarladino").style.visibility='hidden';
+      document.getElementById("especialladino4").style.visibility='visible'; 
+      document.getElementById("circuloespecialplayer4").style.visibility='visible'; 
+     
+      setTimeout(function() {
+           document.getElementById("circuloespecialplayer4").style.visibility='hidden';
+           document.getElementById("botaorolarladino").style.visibility='visible';
+            }, 500)
+
+
+
       }
       if (vidaplayer6 > 0){
-      document.getElementById("especialladino6").style.visibility='visible';
-      document.getElementById("danonoinimigo6").style.visibility='hidden'; 
+      // document.getElementById("especialladino6").style.visibility='visible';
+      // document.getElementById("danonoinimigo6").style.visibility='hidden'; 
+
+
+      document.getElementById("danonoinimigo6").style.visibility='hidden';
+        document.getElementById("botaorolarladino").style.visibility='hidden';
+        document.getElementById("especialladino6").style.visibility='visible'; 
+        document.getElementById("circuloespecialplayer6").style.visibility='visible'; 
+       
+        setTimeout(function() {
+             document.getElementById("circuloespecialplayer6").style.visibility='hidden';
+             document.getElementById("botaorolarladino").style.visibility='visible';
+              }, 500)
+
       }
 
       }
@@ -4869,6 +5009,18 @@ document.getElementById('dice10').src=dadoroll[9];
    document.getElementById("danonoinimigo2").style.visibility='hidden'; 
     document.getElementById("danonoinimigo4").style.visibility='hidden'; 
     document.getElementById("danonoinimigo6").style.visibility='hidden'; 
+
+    document.getElementById("botaorolarmago").style.visibility='hidden';
+    document.getElementById("circuloespecialplayer2").style.visibility='visible'; 
+    document.getElementById("circuloespecialplayer4").style.visibility='visible'; 
+    document.getElementById("circuloespecialplayer6").style.visibility='visible'; 
+   
+    setTimeout(function() {
+         document.getElementById("circuloespecialplayer2").style.visibility='hidden';
+         document.getElementById("circuloespecialplayer4").style.visibility='hidden';
+         document.getElementById("circuloespecialplayer6").style.visibility='hidden';
+         document.getElementById("botaorolarmago").style.visibility='visible';
+          }, 500)
     
 
     };
